@@ -1,0 +1,10 @@
+%x = Simulink.BlockDiagram.getInitialState('H7_1GDL_copy_currentinput_2');
+x=[0.0175, 0];
+argout=linmod('H7_1GDL_currentinput',x,0.0175);
+A=argout.a;
+B=argout.b;
+C=argout.c;
+D=argout.d;
+%sysr = minreal(sys) REALIZACION MINIMA (ESTADOS CON SIGN FISICO - V, X)
+sys=ss(A,B,C,D);
+sysr=minreal(sys)
