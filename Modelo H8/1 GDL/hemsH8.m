@@ -7,7 +7,7 @@ Iyy = 53.106596;
 x_lev = 0.505;
 
 %% 
-current_ = current.'
+current_ = current.';
 surf(current_,airgap,fuerza);
 
 %% 
