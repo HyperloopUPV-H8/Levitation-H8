@@ -3,8 +3,17 @@ m = 200;
 g = 9.81;
 nHEMS = 4;
 nHEMS_W = 2;
-Iyy = 53.106596;
+Ixx = 12.489414;
+Iyy = 52.598747;
+Izz = 53.106596;
 x_lev = 0.505;
+y_lev = 0.2;
+z_lev = 0.1;
+z_max = 0.0225;
+z_min = 0.01;
+y_max = 0.01;
+y_min = -0.01;
+
 
 %% 
 current_ = current.';
