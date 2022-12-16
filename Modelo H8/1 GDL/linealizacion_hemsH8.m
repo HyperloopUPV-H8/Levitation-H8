@@ -1,4 +1,4 @@
-x=[0.019, 0];
+x=[0.0225, 0];
 argout=linmod('H8_1GDL_currentinput',x,0.019);
 A=argout.a;
 B=argout.b;
