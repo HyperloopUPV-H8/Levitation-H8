@@ -13,19 +13,22 @@ z_max = 0.0225;
 z_min = 0.01;
 y_max = 0.01;
 y_min = -0.01;
-current_ = current.';
-surf(current_,airgap,fuerza);
+surf(current,airgap,force);
 I2 = [-0.0117539 0.116439 12.4897 ; -0.0021666 52.5984 0.116439;  53.10658 -0.00216668 -0.0117539]
 I2 = [0 0 12.4897 ; 0 52.5984 0;  53.10658 0 0]
 I3 = [12.4897 0 0 ; 0 52.5984 0;   0 0 53.10658]
 
 
 %% 
-current_ = current.';
-surf(current_,airgap,fuerza);
+figure
+surf(current,airgap,force);
+xlabel('Amplitude [A]')
+ylabel('Airgap [mm]')
+zlabel('Force [N]')
+title('Barrido Airgap-Amplitud-Fuerza')
 
 %% 
-resistance = fuerza;
+resistance = force;
 for i = 1:100
     for j = 1:100
         resistance(i,j) = 0.1496;
@@ -33,7 +36,7 @@ for i = 1:100
 end
 
 %% 
-inductance = fuerza;
+inductance = force;
 for i = 1:100
     for j = 1:100
         inductance(i,j) = 0.0016;
