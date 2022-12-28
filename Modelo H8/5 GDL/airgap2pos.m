@@ -1,7 +1,7 @@
 % CONSTANTES
-x_LEV = [0.46843, 0.46843, 0.54357, 0.54357]
-y_LEV = [0.24712, 0.23288, 0.24712, 0.23288]
-z_LEV = [-0.7225, -0.7225, -0.7225, -0.7225]
+x_LEV = [0.46843, 0.46843, 0.54357, 0.54357] % pendiente de revisar
+y_LEV = [0.24712, 0.23288, 0.24712, 0.23288] % pendiente de revisar
+z_LEV = [0.7225, 0.7225, 0.7225, 0.7225] % pendiente de revisar
 
 x_LIM = %falta
 y_LIM = %falta
