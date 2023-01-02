@@ -1,6 +1,6 @@
 
-PointsCurrent = 100;
-PointsAirgap = 99;
+PointsCurrent = 111;
+PointsAirgap = 14;
 
 hems.Airgap = zeros(1,PointsAirgap);
 hems.Current = zeros(1,PointsCurrent);
@@ -67,8 +67,8 @@ ylabel('Airgap [mm]')
 zlabel('Force [N]')
 title('Barrido Airgap-Amplitud-Fuerza')
 
-hems.Airgap = xNew;
-hems.Current = yNew';
+hems.Airgap = yNew';
+hems.Current = xNew;
 hems.Force_Vertical = A;
 
 %% Tratamiento datos flujo

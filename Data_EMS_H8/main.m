@@ -31,16 +31,17 @@ addpath('lib')
 % surf(AG_map, I_map, magnetic_flux)
 
 % H8
-load("hems.mat")
+load("ems.mat")
 
-air_gap         = hems.Airgap;
-current         = hems.Current;
-force           = hems.Force_Vertical;
-magnetic_flux   = hems.Flux;
+air_gap         = ems.Airgap';
+current         = ems.Current;
+force           = ems.Force_Vertical;
+magnetic_flux   = ems.Flux';
 
 [I_map, AG_map] = meshgrid(current, air_gap);
 
 %plotMF(AG_map, I_map, magnetic_flux)
+figure
 surf(I_map, AG_map, magnetic_flux)
 
 %% Discretization 
@@ -69,16 +70,7 @@ end
 % plotL(AG_reduced_map, I_reduced_map, L)
 surf(AG_reduced_map, I_reduced_map, L)
 
-%% Derivative
-
-fluxV = hems.Flux(50,:);
-plot(fluxV)
-h = abs(fluxV(1) - fluxV(2));
-fluxD = diff(fluxV)/h;
-
-plot(fluxD)
-
 %% Data collection - Lookup table
 
-hems.Inductance              = L';
-save("hems.mat", "hems")
+ems.Inductance              = L';
+save("ems.mat", "ems")
