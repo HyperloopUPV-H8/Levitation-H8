@@ -19,13 +19,3 @@ xlabel('Amplitude [A]')
 ylabel('Airgap [mm]')
 zlabel('Magnetic Flux')
 title('Barrido Airgap-Amplitud-Flujo magnético bobinas')
-
-%% Inductancia 
-
-figure
-surf(hems.Airgap,hems.Current(2:99),hems.Inductance);
-
-xlabel('Amplitude [A]')
-ylabel('Airgap [mm]')
-zlabel('Inductance [H]')
-title('Cálculo Airgap-Amplitud-Inductancias')
