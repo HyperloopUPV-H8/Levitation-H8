@@ -1,0 +1,4 @@
+LIBRARY ..\..\..\..\H8_1GDL_Lineal_sensor_acc.mexw64
+EXPORTS
+    mexFunction
+    mexfilerequiredapiversion
