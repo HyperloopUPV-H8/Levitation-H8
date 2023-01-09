@@ -7,6 +7,8 @@ x_LIM = %falta
 y_LIM = %falta
 z_LIM = %falta
 
+z_cm = %falta
+
 % ROTACIONES
 rotx_aux(1) = asin((airgaps(1) - airgaps(2))/(y_LEV(1) + y_LEV(2)));
 rotx_aux(2) = asin((airgaps(3) - airgaps(4))/(y_LEV(3) + y_LEV(4)));
@@ -28,10 +30,11 @@ y_aux(2) = - airgaps(6) + y_LIM * cos(rotz) - x_LIM * sin(rotz);
 y_aux(3) = + airgaps(7) - y_LIM * cos(rotz) + x_LIM * sin(rotz);
 y_aux(4) = - airgaps(8) + y_LIM * cos(rotz) + x_LIM * sin(rotz);
 
-z_aux(1) = airgaps(1)  + z_LEV(1) * cos(roty) + x_LEV(1) * sin(roty) - y_LEV(1) * sin(rotx);
-z_aux(2) = airgaps(2)  + z_LEV(2) * cos(roty) + x_LEV(2) * sin(roty) + y_LEV(2) * sin(rotx);
-z_aux(3) = airgaps(3)  + z_LEV(3) * cos(roty) - x_LEV(3) * sin(roty) - y_LEV(3) * sin(rotx);
-z_aux(4) = airgaps(4)  + z_LEV(4) * cos(roty) - x_LEV(4) * sin(roty) + y_LEV(4) * sin(rotx);
+z_aux(1) = z_cm - (airgaps(1)  + z_LEV(1) * cos(roty) + x_LEV(1) * sin(roty) - y_LEV(1) * sin(rotx));
+z_aux(2) = z_cm - (airgaps(2)  + z_LEV(2) * cos(roty) + x_LEV(2) * sin(roty) + y_LEV(2) * sin(rotx));
+z_aux(3) = z_cm - (airgaps(3)  + z_LEV(3) * cos(roty) - x_LEV(3) * sin(roty) - y_LEV(3) * sin(rotx));
+z_aux(4) = z_cm - (airgaps(4)  + z_LEV(4) * cos(roty) - x_LEV(4) * sin(roty) + y_LEV(4) * sin(rotx));
+
 
 y = mean(y_aux);
 z = mean(z_aux);
