@@ -90,5 +90,29 @@ title('Barrido Airgap-Amplitud-Flujo magnético bobinas')
 
 hems.Flux = A;
 
+%% Fuerza horizontal
+
+x = DATOS(:,1); %current
+y = DATOS(:,2); %airgap
+z = Fuerza_horizontal;
+
+xNew = linspace(min(x),max(x),PointsCurrent);
+yNew = linspace(min(y),max(y),PointsAirgap)';
+
+[X,Y] = meshgrid(xNew,yNew);
+interpolacion = scatteredInterpolant(x,y,z,'linear','linear');
+A = interpolacion(X,Y);
+
+figure
+surf(X,Y,A);
+
+xlabel('Amplitude [A]')
+ylabel('Airgap [mm]')
+zlabel('Force [N]')
+title('Barrido Airgap-Amplitud-Fuerza')
+
+hems.Airgap = yNew';
+hems.Current = xNew;
+hems.Force_Horizontal = A;
 
 
