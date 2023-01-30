@@ -14,4 +14,8 @@ sys=ss(A2,B2,C2,D2);
 %salida 3: theta derivada
 %salida 4: zpos derivada
 
-K = place(sys.A,sys.B,[-2,-3,-4,-5])
+Ka = place(sys.A,sys.B,[-2,-3,-4,-5, -6, -7])
+
+
+
+
