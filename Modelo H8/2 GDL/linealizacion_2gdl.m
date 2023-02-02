@@ -1,3 +1,5 @@
+lev_nom=0.01965;
+suelo=0.0225;
 x=[0, lev_nom, 0, 0];  %estados
 argout=linmod('H8_2GDL_partelinealizada',x,[0, 0]); % entrada
 A2=argout.a
@@ -7,7 +9,7 @@ D2=argout.d
 sys=ss(A2,B2,C2,D2);
 
 
-K = place(sys.A,sys.B,[-2,-3,-4,-5])
+K = place(sys.A,sys.B,[-2+i,-2-i,-4,-5])
 
 
 
