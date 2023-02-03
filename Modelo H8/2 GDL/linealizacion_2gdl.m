@@ -9,7 +9,11 @@ D2=argout.d
 sys=ss(A2,B2,C2,D2);
 
 
-K = place(sys.A,sys.B,[-2+i,-2-i,-4,-5])
+K = place(sys.A,sys.B,[-2+2i,-2-2i,-5,-6])
+
+%Aa = [A2 zeros(4,4); -C2 zeros(4,4)] 
+%Ba = [B2; -D2]
+%Ka = place(Aa,Ba,[-1 -2 -3 -4 -5 -6 -100 -100])
 
 
 
