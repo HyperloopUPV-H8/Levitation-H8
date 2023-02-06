@@ -8,7 +8,7 @@ C2=argout.c
 D2=argout.d
 sys=ss(A2,B2,C2,D2);
 
-K = place(sys.A,sys.B,[-5 -4 -2+2j -2-2j]);
+K = place(sys.A,sys.B,[-4 -4 -6+6j -6-6j]);
 
 %% Añadir accion integral
 %Continuo-> Aa = [A zeros(filasA,filasC); -C zeros(filasC,filasC)] Ba = [B; -D]
@@ -16,7 +16,7 @@ K = place(sys.A,sys.B,[-5 -4 -2+2j -2-2j]);
 Aa = [A2 zeros(4,2); -C2 zeros(2,2)] 
 Ba = [B2; -D2]
 rank(ctrb(Aa,Ba))
-Ka = place(Aa,Ba,[-5 -4 -2+2j -2-2j -3+1j -3-1j])
+Ka = place(Aa,Ba,[-4 -4 -6+6j -6-6j -4.5+2.25j -4.5-2.25j])
 
 
 
