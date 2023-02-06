@@ -11,9 +11,10 @@ sys=ss(A2,B2,C2,D2);
 
 K = place(sys.A,sys.B,[-5 -4 -2+2j -2-2j])
 
-%Aa = [A2 zeros(4,4); -C2 zeros(4,4)] 
-%Ba = [B2; -D2]
-%Ka = place(Aa,Ba,[-1 -2 -3 -4 -5 -6 -100 -100])
+Aa = [A2 zeros(4,4); -C2 zeros(4,4)] 
+Ba = [B2; -D2]
+rank(Ba)
+Ka = place(Aa,Ba,[-5 -4 -2+2j -2-2j -10 -10 -100 -100])
 
 
 
