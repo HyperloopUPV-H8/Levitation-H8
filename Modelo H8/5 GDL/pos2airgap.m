@@ -1,27 +1,36 @@
+function u = pos2airgap(data)
+
 % CONSTANTES
-x_LEV = [0.46843, 0.46843, 0.54357, 0.54357] % pendiente de revisar
-y_LEV = [0.24712, 0.23288, 0.24712, 0.23288] % pendiente de revisar
-z_LEV = [0.7225, 0.7225, 0.7225, 0.7225] % pendiente de revisar
 
-x_LIM = %falta
-y_LIM = %falta
-z_LIM = %falta
+x_sragx = [0.8069, 0.8069, 0.8069, 0.8069]; 
+y_sragx = [0.1046, 0.1046, 0.1046, 0.1046];
+z_sragx = [0.09865, 0.09865, 0.09865, 0.09865]; 
 
-z_cm = %falta
+x_sragz = [0.82191, 0.82191, 0.82191, 0.82191];
+y_sragz = [0.2018, 0.2018, 0.2018, 0.2018];
+z_sragz = [0.0396, 0.0396, 0.0396, 0.0396]; 
+
+z_infr = 0.6328;
+
+y = data(1);
+z = data(2);
+rotx = data(3);
+roty = data(4);
+rotz = data(5);
+
 
 
 % DISTANCIAS
-airgaps(5) =  y + y_LIM * cos(rotz) + x_LIM * sin(rotz);
-airgaps(6)  = - y + y_LIM * cos(rotz) - x_LIM * sin(rotz);
-airgaps(7) = + y + y_LIM * cos(rotz) - x_LIM * sin(rotz);
-airgaps(8) = - y + y_LIM * cos(rotz) + x_LIM * sin(rotz);
+airgap5 = + y + y_sragx(1) * cos(rotz) + x_sragx(1) * sin(rotz);
+airgap6 = - y + y_sragx(2) * cos(rotz) - x_sragx(2) * sin(rotz);
+airgap7 = + y + y_sragx(3) * cos(rotz) - x_sragx(3) * sin(rotz);
+airgap8 = - y + y_sragx(4) * cos(rotz) + x_sragx(4) * sin(rotz);
 
 
-airgaps(1) = - z + z_cm  + z_LEV(1) * cos(roty) + x_LEV(1) * sin(roty) - y_LEV(1) * sin(rotx);
-airgaps(2) = - z + z_cm  + z_LEV(1) * cos(roty) + x_LEV(1) * sin(roty) + y_LEV(1) * sin(rotx);
-airgaps(3) = - z + z_cm  + z_LEV(1) * cos(roty) - x_LEV(1) * sin(roty) - y_LEV(1) * sin(rotx);
-airgaps(4) = - z + z_cm  + z_LEV(1) * cos(roty) - x_LEV(1) * sin(roty) + y_LEV(1) * sin(rotx);
+airgap1 =  +z - z_infr  + z_sragz(1) * cos(roty) + x_sragz(1) * sin(roty) - y_sragz(1) * sin(rotx);
+airgap2 =  +z - z_infr  + z_sragz(2) * cos(roty) + x_sragz(2) * sin(roty) + y_sragz(2) * sin(rotx);
+airgap3 =  +z - z_infr  + z_sragz(3) * cos(roty) - x_sragz(3) * sin(roty) - y_sragz(3) * sin(rotx);
+airgap4 =  +z - z_infr  + z_sragz(4) * cos(roty) - x_sragz(4) * sin(roty) + y_sragz(4) * sin(rotx);
 
 
-y = mean(y_aux);
-z = mean(z_aux);
+u =[airgap1, airgap2, airgap3, airgap4, airgap5, airgap6, airgap7, airgap8]';
