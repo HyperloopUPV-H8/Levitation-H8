@@ -1,6 +1,6 @@
 lev_nom=0.01965;
 suelo=0.0225;
-x=[0, lev_nom, 0, 0];  %estados
+x=[lev_nom, 0, 0, 0];  %estados
 argout=linmod('H8_2GDL_partelinealizada',x,[0, 0]); % entrada
 A2=argout.a
 B2=argout.b
