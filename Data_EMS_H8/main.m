@@ -33,15 +33,13 @@ addpath('lib')
 % H8
 load("ems.mat")
 
-air_gap         = ems.Airgap';
-current         = ems.Current;
-force           = ems.Force_Vertical;
-magnetic_flux   = ems.Flux';
+air_gap         = airgap_flux;
+current         = current_flux;
+magnetic_flux   = flux_bien;
 
 [I_map, AG_map] = meshgrid(current, air_gap);
 
 %plotMF(AG_map, I_map, magnetic_flux)
-figure
 surf(I_map, AG_map, magnetic_flux)
 
 %% Discretization 
