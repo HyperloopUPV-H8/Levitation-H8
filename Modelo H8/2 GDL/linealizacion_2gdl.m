@@ -16,8 +16,7 @@ K = place(sys.A,sys.B,[-4 -4 -6+6j -6-6j]);
 Aa = [A2 zeros(4,2); -C2 zeros(2,2)] 
 Ba = [B2; -D2]
 rank(ctrb(Aa,Ba))
-Ka = place(Aa,Ba,[-4 -4 -6+6j -6-6j -4.5+2.25j -4.5-2.25j])
-
+Ka = place(Aa,Ba,[-5 -4 -6+6j -6-6j -2+2j -2-2j])
 
 
 
