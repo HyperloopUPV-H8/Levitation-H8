@@ -32,6 +32,7 @@ addpath('lib')
 
 % H8
 load("ems.mat")
+load("ems_calculos_inductancia.mat")
 
 air_gap         = airgap_flux;
 current         = current_flux;
