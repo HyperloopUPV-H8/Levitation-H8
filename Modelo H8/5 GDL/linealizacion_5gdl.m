@@ -1,15 +1,17 @@
-%y_nom=0.012;
-%z_nom=0.01965;
-%x=[0 y_nom z_nom 0 0 0 0 0 0 0 0 0]; %estados: posx,posy,posz,rotx,roty,rotz,vx,vy,vz,ax,ay,az
-%argout=linmod('H8_6GDL_partelinealizada',x,[0 0 0 0 0 0 0 0]); %entradas
-%A5=argout.a
-%B5=argout.b
-%C5=argout.c
-%D5=argout.d
-%sys=ss(A5,B5,C5,D5);
+cg_nom=0.567;
+lev_nom=0.01965;
+%cg_suelo=0.56985;
+%cg_techo=0.54735;
+x=[0, 0, cg_nom, 0, 0, 0, 0, 0, 0, 0, 0, 0]; %estados: posx,posy,posz,rotx,roty,rotz,vx,vy,vz,wx,wy,wz
+argout=linmod('H8_6GDL_partelinealizada',x,[0, 0, 0, 0, 0, 0, 0, 0]); %entradas
+A5=argout.a
+B5=argout.b
+C5=argout.c
+D5=argout.d
+sys=ss(A5,B5,C5,D5);
 %rank(ctrb(A5,B5))
 %eig(A5)
-K = place(A5,B5,[-5 -5 -2 -2 -3 -3 -4 -4 -6+6j -6-6j])
+%K = place(A5,B5,[-5 -5 -2 -2 -3 -3 -4 -4 -6+6j -6-6j])
 %Si cambian las matrices hay que eliminar columnas 1 y 7 y filas 1 y 7
 
 %% Añadir accion integral
