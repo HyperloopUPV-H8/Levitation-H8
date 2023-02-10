@@ -51,7 +51,7 @@ corriente = out.I_conSensor_1gld1.Data;
 temperatura = out.T_conSensor_1gld1.Data;
 
 z_ref = [];
-for i = 1:1:7560
+for i = 1:1:3424
     recta = 0*i+aux;
     z_ref = [z_ref recta];
 end
