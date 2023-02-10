@@ -39,11 +39,10 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <cp:coreProperties xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcmitype="http://purl.org/dc/dcmitype/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <cp:category>model</cp:category>
-  <dcterms:created xsi:type="dcterms:W3CDTF">2022-12-26T11:23:23Z</dcterms:created>
-  <dc:creator>USUARIO</dc:creator>
-  <cp:lastModifiedBy>USUARIO</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2023-02-07T10:37:20Z</dcterms:modified>
-  <cp:revision>1.16</cp:revision>
+  <dcterms:created xsi:type="dcterms:W3CDTF">2023-02-10T10:25:02Z</dcterms:created>
+  <cp:lastModifiedBy>aceao</cp:lastModifiedBy>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2023-02-10T10:25:02Z</dcterms:modified>
+  <cp:revision>1.17</cp:revision>
   <cp:version>R2022b</cp:version>
 </cp:coreProperties>
 
@@ -58,18 +57,18 @@ __MWOPC_PART_BEGIN__ /metadata/mwcoreProperties.xml
 __MWOPC_PART_BEGIN__ /metadata/mwcorePropertiesExtension.xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <mwcoreProperties xmlns="http://schemas.mathworks.com/package/2014/corePropertiesExtension">
-  <uuid>19a5a95e-773a-4f04-8924-d1afb5144cb7</uuid>
+  <uuid>b54761fc-ed5b-4bc3-81f5-e2e69ac78b60</uuid>
 </mwcoreProperties>
 
 __MWOPC_PART_BEGIN__ /metadata/mwcorePropertiesReleaseInfo.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Version information for MathWorks R2022b Release -->
 <MathWorks_version_info>
-  <version>9.13.0.2049777</version>
+  <version>9.13.0.2080170</version>
   <release>R2022b</release>
-  <description></description>
-  <date>Aug 24 2022</date>
-  <checksum>2298934323</checksum>
+  <description>Update 1</description>
+  <date>Sep 28 2022</date>
+  <checksum>244054975</checksum>
 </MathWorks_version_info>
 
 __MWOPC_PART_BEGIN__ /simulink/_rels/blockdiagram.xml.rels
@@ -133,7 +132,7 @@ I = [2 1 1;1 2 1 ;1 1 2 ]
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:1.16&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:1.17&gt;</P>
     </ConfigManagerSettings>
     <SimulationSettings>
       <P Name="SimulationMode">normal</P>
@@ -175,7 +174,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="Description"/>
         <P Name="Components" Class="double">[]</P>
         <P Name="StartTime">0.0</P>
-        <P Name="StopTime">5</P>
+        <P Name="StopTime">10.0</P>
         <P Name="AbsTol">auto</P>
         <P Name="AutoScaleAbsTol">on</P>
         <P Name="FixedStep">auto</P>
@@ -270,8 +269,8 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         </Array>
         <P Name="Description"/>
         <P Name="Components" Class="double">[]</P>
-        <P Name="BlockReduction">on</P>
-        <P Name="BooleanDataType">on</P>
+        <P Name="BlockReduction">off</P>
+        <P Name="BooleanDataType">off</P>
         <P Name="ConditionallyExecuteInputs">on</P>
         <P Name="DefaultParameterBehavior">Tunable</P>
         <P Name="UseDivisionForNetSlopeComputation">off</P>
@@ -345,12 +344,12 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="AlgebraicLoopMsg">warning</P>
         <P Name="ArtificialAlgebraicLoopMsg">warning</P>
         <P Name="SaveWithDisabledLinksMsg">warning</P>
-        <P Name="SaveWithParameterizedLinksMsg">warning</P>
+        <P Name="SaveWithParameterizedLinksMsg">none</P>
         <P Name="CheckSSInitialOutputMsg">on</P>
-        <P Name="UnderspecifiedInitializationDetection">Simplified</P>
-        <P Name="MergeDetectMultiDrivingBlocksExec">error</P>
+        <P Name="UnderspecifiedInitializationDetection">Classic</P>
+        <P Name="MergeDetectMultiDrivingBlocksExec">none</P>
         <P Name="CheckExecutionContextPreStartOutputMsg">off</P>
-        <P Name="SignalResolutionControl">UseLocalSettings</P>
+        <P Name="SignalResolutionControl">TryResolveAllWithWarning</P>
         <P Name="BlockPriorityViolationMsg">warning</P>
         <P Name="MinStepSizeMsg">warning</P>
         <P Name="TimeAdjustmentMsg">none</P>
@@ -487,7 +486,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="TargetPreprocMaxBitsSint">32</P>
         <P Name="TargetPreprocMaxBitsUint">32</P>
         <P Name="TargetHWDeviceType">Specified</P>
-        <P Name="TargetUnknown">off</P>
+        <P Name="TargetUnknown">on</P>
         <P Name="ProdEqTarget">on</P>
         <P Name="UseEmbeddedCoderFeatures">on</P>
         <P Name="UseSimulinkCoderFeatures">on</P>
@@ -508,7 +507,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="ModelDependencies"/>
         <P Name="ModelReferencePassRootInputsByReference">on</P>
         <P Name="ModelReferenceMinAlgLoopOccurrences">off</P>
-        <P Name="PropagateSignalLabelsOutOfModel">on</P>
+        <P Name="PropagateSignalLabelsOutOfModel">off</P>
         <P Name="SupportModelReferenceSimTargetCustomCode">off</P>
         <P Name="UseModelRefSolver">off</P>
       </Object>
@@ -984,14 +983,14 @@ __MWOPC_PART_BEGIN__ /simulink/graphicalInterface.xml
   <Outport Name="Out5">
     <P Name="BusObject"/>
     <P Name="BusOutputAsStruct">off</P>
-    <P Name="SignalName">velocidad respecto a eje objeto</P>
+    <P Name="SignalName">aceleración respecto a eje objeto</P>
     <P Name="UnitExpr">inherit</P>
     <P Name="OutportClientType">off</P>
   </Outport>
   <Outport Name="Out6">
     <P Name="BusObject"/>
     <P Name="BusOutputAsStruct">off</P>
-    <P Name="SignalName">aceleración</P>
+    <P Name="SignalName">velocidades angulares</P>
     <P Name="UnitExpr">inherit</P>
     <P Name="OutportClientType">off</P>
   </Outport>
@@ -1022,34 +1021,34 @@ __MWOPC_PART_BEGIN__ /simulink/graphicalInterface.xml
 __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2022b_20220222">
-  <System type="System" uuid="6ee60726-57bf-4ba5-9415-6de664125f88">
-    <Interface type="Interface" uuid="76324bfc-c3d6-4813-82ed-f8a5b67f5929"/>
+  <System type="System" uuid="57d99090-0ab5-4056-90e7-6d6970c41980">
+    <Interface type="Interface" uuid="df8b5043-3fbe-410b-a33c-a382bba7ea1a"/>
   </System>
 </MF0>
 __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <sltp_graph version="1.1" packageUris="http://schema.mathworks.com/mf0/sltp_mm/R2022b_202203181029">
-  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="54c56550-16bd-4975-a90c-f4898586929b">
+  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="4ca8da01-363b-431a-b24b-1f47d96e6d25">
     <priorityDirection>HighNumberLast</priorityDirection>
     <editorState type="sltp.mm.core.EditorState" uuid="c10c48b9-050a-4c2e-9625-e1abca4feaad">
       <isSynchronized>true</isSynchronized>
       <panelState type="sltp.mm.core.EditorPanelState" uuid="5201ec29-d860-4a9c-91ad-6517356a39e8"/>
     </editorState>
-    <rootTask type="sltp.mm.core.Task" uuid="642a1768-ec9c-4e71-a77f-cf37f785e8b2">
-      <context type="sltp.mm.core.Context" uuid="54c56550-16bd-4975-a90c-f4898586929b"/>
+    <rootTask type="sltp.mm.core.Task" uuid="bfdd1a27-5e0e-4379-b9c7-a8f298de5e80">
+      <context type="sltp.mm.core.Context" uuid="4ca8da01-363b-431a-b24b-1f47d96e6d25"/>
       <explicit>false</explicit>
       <name>Default</name>
       <priority>-2147483648</priority>
-      <subgraph type="sltp.mm.core.Graph" uuid="465c6306-35c6-47d6-a7cb-07261ac4f761">
-        <tasks type="sltp.mm.core.Task" uuid="ab0a9625-c482-4760-95d2-8f927514d1bc">
+      <subgraph type="sltp.mm.core.Graph" uuid="568b74f2-68d2-43b8-bbd1-990421878aff">
+        <tasks type="sltp.mm.core.Task" uuid="b64e3300-c569-4d37-b6c9-f26e01e0a2cc">
           <baseTask>true</baseTask>
-          <context type="sltp.mm.core.Context" uuid="54c56550-16bd-4975-a90c-f4898586929b"/>
+          <context type="sltp.mm.core.Context" uuid="4ca8da01-363b-431a-b24b-1f47d96e6d25"/>
           <explicit>false</explicit>
           <id>1</id>
           <isTimed>true</isTimed>
           <name>Cont</name>
           <priority>40</priority>
-          <rates type="sltp.mm.core.Rate" uuid="89d9656b-f4ea-4947-87e5-fe40ddb68847">
+          <rates type="sltp.mm.core.Rate" uuid="e1deb078-de84-41e8-a822-4ebe562a239e">
             <annotation>Cont</annotation>
             <color>255</color>
             <hasBlocks>true</hasBlocks>
@@ -1059,7 +1058,7 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
             </rateSpec>
             <sti>0</sti>
           </rates>
-          <rates type="sltp.mm.core.Rate" uuid="8134fd03-3b70-44d8-8820-ea7f890eb138">
+          <rates type="sltp.mm.core.Rate" uuid="9ef1b6b0-1f78-49cb-afa5-453a8c687995">
             <annotation>FiM</annotation>
             <color>-2139062017</color>
             <hasBlocks>true</hasBlocks>
@@ -1069,7 +1068,7 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
             </rateSpec>
             <sti>1</sti>
           </rates>
-          <rates type="sltp.mm.core.Rate" uuid="b8b14031-2a6f-4fa2-8b08-2cfa62a74d3c">
+          <rates type="sltp.mm.core.Rate" uuid="e6db4d0a-cfb0-4cc5-8eb8-b0bf86775afb">
             <annotation>D1</annotation>
             <color>-436207361</color>
             <hasBlocks>true</hasBlocks>
@@ -1162,8 +1161,8 @@ __MWOPC_PART_BEGIN__ /simulink/systems/_rels/system_root.xml.rels
 __MWOPC_PART_BEGIN__ /simulink/systems/system_141.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
-  <P Name="Location">[-1, -7, 1537, 865]</P>
-  <P Name="ZoomFactor">80</P>
+  <P Name="Location">[1, 0, 640, 671]</P>
+  <P Name="ZoomFactor">50</P>
   <Block BlockType="Inport" Name="In1" SID="144">
     <P Name="Position">[415, 238, 445, 252]</P>
     <P Name="ZOrder">715</P>
@@ -3011,9 +3010,8 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_289.xml
 __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
-  <P Name="Location">[-1, -7, 1537, 865]</P>
-  <P Name="Open">on</P>
-  <P Name="ZoomFactor">80</P>
+  <P Name="Location">[1, 0, 640, 671]</P>
+  <P Name="ZoomFactor">60</P>
   <P Name="ReportName">simulink-default.rpt</P>
   <P Name="SIDHighWatermark">522</P>
   <Block BlockType="Inport" Name="In1" SID="510">
@@ -3067,10 +3065,10 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
         <P Name="Name">matriz de transformacion</P>
       </Port>
       <Port Type="out" Index="5">
-        <P Name="Name">velocidad respecto a eje objeto</P>
+        <P Name="Name">aceleración respecto a eje objeto</P>
       </Port>
       <Port Type="out" Index="6">
-        <P Name="Name">aceleración</P>
+        <P Name="Name">velocidades angulares</P>
       </Port>
     </PortProperties>
     <System Ref="system_141"/>
@@ -3156,14 +3154,14 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <P Name="Dst">141#in:6</P>
   </Line>
   <Line>
-    <P Name="Name">aceleración</P>
+    <P Name="Name">velocidades angulares</P>
     <P Name="ZOrder">299</P>
     <P Name="Labels">[1, 1]</P>
     <P Name="Src">141#out:6</P>
     <P Name="Dst">521#in:1</P>
   </Line>
   <Line>
-    <P Name="Name">velocidad respecto a eje objeto</P>
+    <P Name="Name">aceleración respecto a eje objeto</P>
     <P Name="ZOrder">308</P>
     <P Name="Labels">[1, 1]</P>
     <P Name="Src">141#out:5</P>
@@ -3364,7 +3362,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">fae48301-35f7-4a3f-bfe3-4d6060918227</P>
     </Object>
-    <P Name="BDUuid" Class="char">ae835861-f811-4d24-8bee-18cfb800a9ee</P>
+    <P Name="BDUuid" Class="char">930d6059-f7b3-4e5e-9a2e-c69de1626216</P>
   </Object>
 </WindowsInfo>
 
