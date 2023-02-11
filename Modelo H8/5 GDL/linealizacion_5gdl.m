@@ -11,7 +11,7 @@ argout=linmod('H8_6GDL_partelinealizada',x,[0, 0, 0, 0, 0, 0, 0, 0]); %entradas
 sys=ss(A5,B5,C5,D5);
 %rank(ctrb(A5,B5))
 %eig(A5)
-K = place(A5,B5,[-5 -5 -2 -2 -3 -3 -4 -4 -6+6j -6-6j])
+K = place(A5,B5,[-1 -1 -1 -1 -2 -2 -2 -2 -2+1j -2-1j])
 %Si cambian las matrices hay que eliminar columnas 1 y 7 y filas 1 y 7
 
 %% Añadir accion integral
