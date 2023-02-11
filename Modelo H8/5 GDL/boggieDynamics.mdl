@@ -39,10 +39,10 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <cp:coreProperties xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcmitype="http://purl.org/dc/dcmitype/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <cp:category>model</cp:category>
-  <dcterms:created xsi:type="dcterms:W3CDTF">2023-02-10T10:25:02Z</dcterms:created>
-  <cp:lastModifiedBy>aceao</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2023-02-10T10:25:02Z</dcterms:modified>
-  <cp:revision>1.17</cp:revision>
+  <dcterms:created xsi:type="dcterms:W3CDTF">2023-02-11T12:22:09Z</dcterms:created>
+  <cp:lastModifiedBy>USUARIO</cp:lastModifiedBy>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2023-02-11T12:22:09Z</dcterms:modified>
+  <cp:revision>1.18</cp:revision>
   <cp:version>R2022b</cp:version>
 </cp:coreProperties>
 
@@ -57,18 +57,18 @@ __MWOPC_PART_BEGIN__ /metadata/mwcoreProperties.xml
 __MWOPC_PART_BEGIN__ /metadata/mwcorePropertiesExtension.xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <mwcoreProperties xmlns="http://schemas.mathworks.com/package/2014/corePropertiesExtension">
-  <uuid>b54761fc-ed5b-4bc3-81f5-e2e69ac78b60</uuid>
+  <uuid>b32a06f4-9113-4070-9bcb-9371cef87ac1</uuid>
 </mwcoreProperties>
 
 __MWOPC_PART_BEGIN__ /metadata/mwcorePropertiesReleaseInfo.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Version information for MathWorks R2022b Release -->
 <MathWorks_version_info>
-  <version>9.13.0.2080170</version>
+  <version>9.13.0.2049777</version>
   <release>R2022b</release>
-  <description>Update 1</description>
-  <date>Sep 28 2022</date>
-  <checksum>244054975</checksum>
+  <description></description>
+  <date>Aug 24 2022</date>
+  <checksum>2298934323</checksum>
 </MathWorks_version_info>
 
 __MWOPC_PART_BEGIN__ /simulink/_rels/blockdiagram.xml.rels
@@ -106,33 +106,43 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <P Name="ModelUUID">ed59aa73-25e3-4130-af13-af594e099318</P>
     <P Name="InitFcn">m = 200;
 g = 9.81;
-Ixx = 12.489414;
-Iyy = 52.598747;
-Izz = 53.106596;
 
-x_lev12 = 1;
-x_lev34 = 1;
-x_lim = 0.1;
+x_lev12 = 0.443;
+x_lev34 = 0.542;
+x_guid12 = 0.4475;
+x_guid34 = 0.5465;
+x_lim = 0.0495;
 
-y_lev13 = 1;
-y_lev24 = 1;
-y_lim = 0.1;
-y_brk = 0.1;
+y_lev13 = 0.23686;
+y_lev24 = 0.23686;
+y_guid13 = 0.24263;
+y_guid24 = 0.24263;
+y_lim = 0.0005;
+y_brk = 0.21552;
 
-z_lev = 1;
-z_lim = 0.1;
-z_brk = 0.1;
+z_lev = 0.08546;
+z_guid = 0.026;
+z_lim = 0.1055;
+z_brk = 0.03941;
 
-cg_nom = 0.3;
+kp_lev = 50;
+ki_lev = 400;
+kp_guid = 50;
+ki_guid = 400;
 
-I = [2 1 1;1 2 1 ;1 1 2 ]
-%I2 = [-0.0117539 0.116439 12.4897 ; -0.0021666 52.5984 0.116439;  53.10658 -0.00216668 -0.0117539]
-</P>
+Imax_lev = 50;
+Imin_lev = -50;
+Imax_guid = 50;
+Imin_guid = 0;
+
+cg_nom = 0.567;
+
+I = [43.082 0 0; 0 26.887 -0; 0 0 29.297]</P>
     <P Name="LastSavedArchitecture">win64</P>
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:1.17&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:1.18&gt;</P>
     </ConfigManagerSettings>
     <SimulationSettings>
       <P Name="SimulationMode">normal</P>
@@ -1021,34 +1031,34 @@ __MWOPC_PART_BEGIN__ /simulink/graphicalInterface.xml
 __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2022b_20220222">
-  <System type="System" uuid="57d99090-0ab5-4056-90e7-6d6970c41980">
-    <Interface type="Interface" uuid="df8b5043-3fbe-410b-a33c-a382bba7ea1a"/>
+  <System type="System" uuid="b9bf7014-300a-4a99-9347-a2f118775e2c">
+    <Interface type="Interface" uuid="17b2685c-bbb1-46bc-9ac7-1f2f432bbba8"/>
   </System>
 </MF0>
 __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <sltp_graph version="1.1" packageUris="http://schema.mathworks.com/mf0/sltp_mm/R2022b_202203181029">
-  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="4ca8da01-363b-431a-b24b-1f47d96e6d25">
+  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="eac693b7-2713-4029-bf92-dd3a141f37a5">
     <priorityDirection>HighNumberLast</priorityDirection>
     <editorState type="sltp.mm.core.EditorState" uuid="c10c48b9-050a-4c2e-9625-e1abca4feaad">
       <isSynchronized>true</isSynchronized>
       <panelState type="sltp.mm.core.EditorPanelState" uuid="5201ec29-d860-4a9c-91ad-6517356a39e8"/>
     </editorState>
-    <rootTask type="sltp.mm.core.Task" uuid="bfdd1a27-5e0e-4379-b9c7-a8f298de5e80">
-      <context type="sltp.mm.core.Context" uuid="4ca8da01-363b-431a-b24b-1f47d96e6d25"/>
+    <rootTask type="sltp.mm.core.Task" uuid="1af8590a-8a89-4b10-afc3-147420ca7253">
+      <context type="sltp.mm.core.Context" uuid="eac693b7-2713-4029-bf92-dd3a141f37a5"/>
       <explicit>false</explicit>
       <name>Default</name>
       <priority>-2147483648</priority>
-      <subgraph type="sltp.mm.core.Graph" uuid="568b74f2-68d2-43b8-bbd1-990421878aff">
-        <tasks type="sltp.mm.core.Task" uuid="b64e3300-c569-4d37-b6c9-f26e01e0a2cc">
+      <subgraph type="sltp.mm.core.Graph" uuid="6cb09139-a632-44cf-8a3c-8d7c3556c0b3">
+        <tasks type="sltp.mm.core.Task" uuid="b5728633-abed-4027-8e5e-6feca0aceb98">
           <baseTask>true</baseTask>
-          <context type="sltp.mm.core.Context" uuid="4ca8da01-363b-431a-b24b-1f47d96e6d25"/>
+          <context type="sltp.mm.core.Context" uuid="eac693b7-2713-4029-bf92-dd3a141f37a5"/>
           <explicit>false</explicit>
           <id>1</id>
           <isTimed>true</isTimed>
           <name>Cont</name>
           <priority>40</priority>
-          <rates type="sltp.mm.core.Rate" uuid="e1deb078-de84-41e8-a822-4ebe562a239e">
+          <rates type="sltp.mm.core.Rate" uuid="ad321c1e-100e-49d8-9fdc-2bdf87f8d4ff">
             <annotation>Cont</annotation>
             <color>255</color>
             <hasBlocks>true</hasBlocks>
@@ -1058,7 +1068,7 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
             </rateSpec>
             <sti>0</sti>
           </rates>
-          <rates type="sltp.mm.core.Rate" uuid="9ef1b6b0-1f78-49cb-afa5-453a8c687995">
+          <rates type="sltp.mm.core.Rate" uuid="ae90a7cf-87b7-4b45-9175-6c3ac1535468">
             <annotation>FiM</annotation>
             <color>-2139062017</color>
             <hasBlocks>true</hasBlocks>
@@ -1068,7 +1078,7 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
             </rateSpec>
             <sti>1</sti>
           </rates>
-          <rates type="sltp.mm.core.Rate" uuid="e6db4d0a-cfb0-4cc5-8eb8-b0bf86775afb">
+          <rates type="sltp.mm.core.Rate" uuid="5afcf9c7-e38f-47d6-aef6-59638af040e0">
             <annotation>D1</annotation>
             <color>-436207361</color>
             <hasBlocks>true</hasBlocks>
@@ -1161,8 +1171,8 @@ __MWOPC_PART_BEGIN__ /simulink/systems/_rels/system_root.xml.rels
 __MWOPC_PART_BEGIN__ /simulink/systems/system_141.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
-  <P Name="Location">[1, 0, 640, 671]</P>
-  <P Name="ZoomFactor">50</P>
+  <P Name="Location">[-1, -7, 1537, 865]</P>
+  <P Name="ZoomFactor">72</P>
   <Block BlockType="Inport" Name="In1" SID="144">
     <P Name="Position">[415, 238, 445, 252]</P>
     <P Name="ZOrder">715</P>
@@ -1212,7 +1222,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_141.xml
       <P Name="rep">Euler Angles</P>
       <P Name="xme_0">[0 0 cg_nom]</P>
       <P Name="Vm_0">[0 0 0]</P>
-      <P Name="eul_0">[0 0.5 0]</P>
+      <P Name="eul_0">[0 0 0]</P>
       <P Name="pm_0">[0 0 0]</P>
       <P Name="mass_0">m</P>
       <P Name="mass_e">0.5</P>
@@ -2449,6 +2459,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_277.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
   <P Name="Location">[-1, -7, 1537, 865]</P>
+  <P Name="ZoomFactor">125</P>
   <Block BlockType="Inport" Name="In2" SID="301">
     <P Name="Position">[55, 763, 85, 777]</P>
     <P Name="ZOrder">806</P>
@@ -2507,14 +2518,14 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_277.xml
     </PortProperties>
   </Block>
   <Block BlockType="Gain" Name="Gain1" SID="399">
-    <P Name="Position">[340, 651, 410, 679]</P>
+    <P Name="Position">[340, 651, 425, 679]</P>
     <P Name="ZOrder">820</P>
-    <P Name="Gain">x_lev34</P>
+    <P Name="Gain">x_guid34</P>
   </Block>
   <Block BlockType="Gain" Name="Gain2" SID="400">
-    <P Name="Position">[340, 606, 410, 634]</P>
+    <P Name="Position">[340, 606, 425, 634]</P>
     <P Name="ZOrder">818</P>
-    <P Name="Gain">x_lev12</P>
+    <P Name="Gain">x_guid12</P>
   </Block>
   <Block BlockType="Gain" Name="Gain23" SID="311">
     <P Name="Position">[350, 1021, 410, 1049]</P>
@@ -2529,7 +2540,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_277.xml
   <Block BlockType="Gain" Name="Gain34" SID="420">
     <P Name="Position">[345, 951, 415, 979]</P>
     <P Name="ZOrder">826</P>
-    <P Name="Gain">z_lev</P>
+    <P Name="Gain">z_guid</P>
   </Block>
   <Block BlockType="Sum" Name="MLy_" SID="317">
     <PortCounts in="2" out="1"/>
@@ -3010,8 +3021,8 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_289.xml
 __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
-  <P Name="Location">[1, 0, 640, 671]</P>
-  <P Name="ZoomFactor">60</P>
+  <P Name="Location">[-1, -7, 1537, 865]</P>
+  <P Name="ZoomFactor">125</P>
   <P Name="ReportName">simulink-default.rpt</P>
   <P Name="SIDHighWatermark">522</P>
   <Block BlockType="Inport" Name="In1" SID="510">
@@ -3362,7 +3373,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">fae48301-35f7-4a3f-bfe3-4d6060918227</P>
     </Object>
-    <P Name="BDUuid" Class="char">930d6059-f7b3-4e5e-9a2e-c69de1626216</P>
+    <P Name="BDUuid" Class="char">6fa8224a-d1a6-449d-ad84-42abf676e1b5</P>
   </Object>
 </WindowsInfo>
 
