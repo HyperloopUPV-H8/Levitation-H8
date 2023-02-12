@@ -11,7 +11,7 @@ D5=argout.d
 sys=ss(A5,B5,C5,D5);
 %rank(ctrb(A5,B5))
 %eig(A5)
-K = place(A6,B6,[-1 -1 -1 -1 -2 -2 -2 -2 -2+2j -2-2j])
+%K = place(A6,B6,[-1 -1 -1 -1 -2 -2 -2 -2 -2+2j -2-2j])
 %Si cambian las matrices hay que eliminar columnas 1 y 7 y filas 1 y 7
 
 %% Añadir accion integral
