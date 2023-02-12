@@ -68,13 +68,15 @@ z_ref = z_ref';
 % figure
 % plot(time, temperatura);
 % 
-% airgap_Filtrado_Time = out.airgapFiltrado_conSensor_1gld1.Time;
-% airgap_sinFiltrar = out.airgap_conSensor_1gld.Data;
-% airgap_Filtrado = out.airgapFiltrado_conSensor_1gld1.Data;
+ airgap_Filtrado_Time = out.airgapFiltrado_conSensor_1gld1.Time;
+ airgap_sinFiltrar = out.airgapSinFiltrar_conSensor_1gld.Data;
+ airgap_Filtrado = out.airgapFiltrado_conSensor_1gld1.Data;
 % 
-% figure
-% plot(time, airgap_sinFiltrar)
-% hold on
-% plot(airgap_Filtrado_Time, airgap_Filtrado);
-
+figure
+plot(time, airgap_sinFiltrar, 'Color',colors(1), 'LineWidth', 1);
+hold on
+plot(airgap_Filtrado_Time, airgap_Filtrado,'Color', colors(2), 'LineWidth', 1);
+xlabel("Time [s]")
+ylabel("Distance sensor measure [mm]")
+legend('Non-filtered','Filtered')
 

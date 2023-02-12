@@ -39,22 +39,25 @@ run plotH8.m
 % Descomenta el código de abajo
 % Guarda en x y z tus variables
 % Recuerda cambiar los nombres del titulo y los ejes!
+y = hems.Airgap;
+x = hems.Current;
+z = hems.Force_Vertical;
 
-% set(groot,'defaultAxesTickLabelInterpreter','latex');  
-% 
-% f = figure();
-% s = surf(x, y, z);
-% s.EdgeColor = 'white';
-% s.EdgeAlpha = 0.25;
-% 
-% title('\textbf{Nombre de la gráfica}','Interpreter','latex')
-% xlabel('Titulo Eje X [unidades]','Interpreter','latex')
-% ylabel('Titulo Eje Y [unidades]','Interpreter','latex')
-% zlabel('Titulo Eje Z [unidades]','Interpreter','latex')
-% 
-% colormap copper
-% 
-% exportgraphics(f,'Grafica3D.png','Resolution',660)
+set(groot,'defaultAxesTickLabelInterpreter','latex');  
+
+f = figure();
+s = surf(x, y, z);
+s.EdgeColor = 'white';
+s.EdgeAlpha = 0.25;
+
+title('\textbf{Nombre de la gráfica}','Interpreter','latex')
+xlabel('Titulo Eje X [unidades]','Interpreter','latex')
+ylabel('Titulo Eje Y [unidades]','Interpreter','latex')
+zlabel('Titulo Eje Z [unidades]','Interpreter','latex')
+
+colormap copper
+
+exportgraphics(f,'Grafica3D.png','Resolution',660)
 
 
 
