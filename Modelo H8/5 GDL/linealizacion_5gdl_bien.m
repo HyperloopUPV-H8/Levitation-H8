@@ -1,8 +1,8 @@
 cg_nom=0.567;
 lev_nom=0.01965;
-%cg_suelo=0.56985;
-%cg_techo=0.54735;
-x=[0, 0, cg_nom, 0, 0, 0, 0, 0, 0, 0, 0]; %estados: posx,posy,posz,rotx,roty,rotz,vx,vy,vz,wx,wy,wz
+cg_suelo=0.56985;
+cg_techo=0.54735;
+x=[0, 0, cg_nom, 0, 0, 0, 0, 0, 0, 0, 0, 0]; %estados: posx,posy,posz,rotx,roty,rotz,vx,vy,vz,wx,wy,wz
 argout=linmod('H8_6GDL_partelinealizada',x,[0, 0, 0, 0, 0, 0, 0, 0]); %entradas
 A5=argout.a
 B5=argout.b
