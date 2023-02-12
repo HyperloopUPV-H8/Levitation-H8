@@ -1,14 +1,14 @@
-cg_nom=0.567;
-lev_nom=0.01965;
-cg_suelo=0.56985;
-cg_techo=0.54735;
-x=[0, 0, cg_nom, 0, 0, 0, 0, 0, 0, 0, 0, 0]; %estados: posx,posy,posz,rotx,roty,rotz,vx,vy,vz,wx,wy,wz
-argout=linmod('H8_6GDL_partelinealizada',x,[0, 0, 0, 0, 0, 0, 0, 0]); %entradas
-A5=argout.a
-B5=argout.b
-C5=argout.c
-D5=argout.d
-sys=ss(A5,B5,C5,D5);
+% cg_nom=0.567;
+% lev_nom=0.01965;
+% cg_suelo=0.56985;
+% cg_techo=0.54735;
+% x=[0, 0, cg_nom, 0, 0, 0, 0, 0, 0, 0, 0, 0]; %estados: posx,posy,posz,rotx,roty,rotz,vx,vy,vz,wx,wy,wz
+% argout=linmod('H8_6GDL_partelinealizada',x,[0, 0, 0, 0, 0, 0, 0, 0]); %entradas
+% A5=argout.a
+% B5=argout.b
+% C5=argout.c
+% D5=argout.d
+% sys=ss(A5,B5,C5,D5);
 %rank(ctrb(A5,B5))
 %eig(A5)
 %K = place(A6,B6,[-1 -1 -1 -1 -2 -2 -2 -2 -2+2j -2-2j])
