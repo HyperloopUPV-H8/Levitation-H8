@@ -20,8 +20,8 @@ K = place(A5,B5,[-1 -1 -1 -1 -2 -2 -2 -2 -2+2j -2-2j])
 %C = [1 0 0 0; 0 1 0 0];
 %D = zeros(2,2)
 
-Aa = [A5 zeros(10,10); C5 zeros(10,10)] 
-Ba = [B5; D5]
+Aa = [A6 zeros(10,10); C6 zeros(10,10)] 
+Ba = [B6; D6]
 rank(ctrb(Aa,Ba))
 
 Ka = place(Aa,Ba,[ -1 -1 -2 -2 -3 -3 -6 -6 -7 -7 -5 -5 -4 -4 -5 -5 -8 -8 -6+6j -6-6j])
