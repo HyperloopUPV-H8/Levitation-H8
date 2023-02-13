@@ -2,7 +2,7 @@
   lev_nom=0.01965;
   cg_suelo=0.56985;
   cg_techo=0.55735;
-    x=[cg_nom, 0, 0, 0, 0, 0]; %estados: posz,rotx,roty,vz,wx,wy
+    x=[0, 0, cg_nom, 0, 0, 0, 0, 0, 0, 0, 0, 0]; %estados: posz,rotx,roty,vz,wx,wy
     argout=linmod('H8_HEMS_partelinealizada',x,[0, 0, 0, 0]); %entradas
     A3=argout.a
     B3=argout.b
