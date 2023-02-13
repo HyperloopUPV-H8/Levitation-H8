@@ -41,8 +41,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <cp:category>model</cp:category>
   <dcterms:created xsi:type="dcterms:W3CDTF">2023-02-11T12:22:09Z</dcterms:created>
   <cp:lastModifiedBy>USUARIO</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2023-02-11T12:22:09Z</dcterms:modified>
-  <cp:revision>1.18</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2023-02-13T00:13:48Z</dcterms:modified>
+  <cp:revision>1.20</cp:revision>
   <cp:version>R2022b</cp:version>
 </cp:coreProperties>
 
@@ -104,45 +104,11 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
 <ModelInformation Version="1.0">
   <Model>
     <P Name="ModelUUID">ed59aa73-25e3-4130-af13-af594e099318</P>
-    <P Name="InitFcn">m = 200;
-g = 9.81;
-
-x_lev12 = 0.443;
-x_lev34 = 0.542;
-x_guid12 = 0.4475;
-x_guid34 = 0.5465;
-x_lim = 0.0495;
-
-y_lev13 = 0.23686;
-y_lev24 = 0.23686;
-y_guid13 = 0.24263;
-y_guid24 = 0.24263;
-y_lim = 0.0005;
-y_brk = 0.21552;
-
-z_lev = 0.08546;
-z_guid = 0.026;
-z_lim = 0.1055;
-z_brk = 0.03941;
-
-kp_lev = 50;
-ki_lev = 400;
-kp_guid = 50;
-ki_guid = 400;
-
-Imax_lev = 50;
-Imin_lev = -50;
-Imax_guid = 50;
-Imin_guid = 0;
-
-cg_nom = 0.567;
-
-I = [43.082 0 0; 0 26.887 -0; 0 0 29.297]</P>
     <P Name="LastSavedArchitecture">win64</P>
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:1.18&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:1.20&gt;</P>
     </ConfigManagerSettings>
     <SimulationSettings>
       <P Name="SimulationMode">normal</P>
@@ -356,7 +322,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
         <P Name="SaveWithDisabledLinksMsg">warning</P>
         <P Name="SaveWithParameterizedLinksMsg">none</P>
         <P Name="CheckSSInitialOutputMsg">on</P>
-        <P Name="UnderspecifiedInitializationDetection">Classic</P>
+        <P Name="UnderspecifiedInitializationDetection">Simplified</P>
         <P Name="MergeDetectMultiDrivingBlocksExec">none</P>
         <P Name="CheckExecutionContextPreStartOutputMsg">off</P>
         <P Name="SignalResolutionControl">TryResolveAllWithWarning</P>
@@ -903,8 +869,8 @@ __MWOPC_PART_BEGIN__ /simulink/configSet0.xml
       </Object>
     </Array>
     <P Name="Name">Configuration</P>
-    <P Name="CurrentDlgPage">Solver</P>
-    <P Name="ConfigPrmDlgPosition">[ 0, 0, 0, 0 ]</P>
+    <P Name="CurrentDlgPage">Diagnostics/Data Validity</P>
+    <P Name="ConfigPrmDlgPosition">[ 71, 71, 900, 710 ]</P>
     <P Name="ExtraOptions"/>
   </Object>
 </ConfigSet>
@@ -1031,34 +997,82 @@ __MWOPC_PART_BEGIN__ /simulink/graphicalInterface.xml
 __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2022b_20220222">
-  <System type="System" uuid="b9bf7014-300a-4a99-9347-a2f118775e2c">
-    <Interface type="Interface" uuid="17b2685c-bbb1-46bc-9ac7-1f2f432bbba8"/>
+  <System type="System" uuid="6c2ae1fc-3b37-401c-986e-22d35d2620f5">
+    <Interface type="Interface" uuid="b341b8b3-fc9e-48d5-a237-8571cc795c01"/>
   </System>
 </MF0>
 __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <sltp_graph version="1.1" packageUris="http://schema.mathworks.com/mf0/sltp_mm/R2022b_202203181029">
-  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="eac693b7-2713-4029-bf92-dd3a141f37a5">
+  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="2665c496-a221-476e-8601-eb7a6c12886f">
+    <globalData type="sltp.mm.core.GlobalData" uuid="2d07c7c6-9aeb-4e7d-88d5-b971422ebb84">
+      <dataName>portIn1</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="caf47b29-e028-477c-ab7f-3b1d5a483579">
+      <dataName>portIn2</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="35c8f4bf-81b8-44ef-81ca-ad40c473e4d9">
+      <dataName>portIn3</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="305228d6-805d-4aed-9272-c085517f2757">
+      <dataName>portIn4</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="82cf69c2-778f-49bb-9ef3-24a09ec1cf7f">
+      <dataName>portIn5</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="97913adc-b2f3-47da-a34f-3f45c0e0f7d4">
+      <dataName>portIn6</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="d8b4c01b-1e54-4788-8db5-01bb9052ebe4">
+      <dataName>portOut1</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="ac959ba2-6093-42f2-afef-da3e71b07040">
+      <dataName>portOut2</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="2000c3dd-def3-496a-a2ba-5b8904975389">
+      <dataName>portOut3</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="6c1eb16f-8d2f-449f-8787-9ea919b98534">
+      <dataName>portOut4</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="a29f73f6-52bd-44dd-9862-f5d43843849b">
+      <dataName>portOut5</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="9001b18a-2416-4687-8f2a-badcc17e3cdc">
+      <dataName>portOut6</dataName>
+      <type>RootOutport</type>
+    </globalData>
     <priorityDirection>HighNumberLast</priorityDirection>
     <editorState type="sltp.mm.core.EditorState" uuid="c10c48b9-050a-4c2e-9625-e1abca4feaad">
       <isSynchronized>true</isSynchronized>
       <panelState type="sltp.mm.core.EditorPanelState" uuid="5201ec29-d860-4a9c-91ad-6517356a39e8"/>
     </editorState>
-    <rootTask type="sltp.mm.core.Task" uuid="1af8590a-8a89-4b10-afc3-147420ca7253">
-      <context type="sltp.mm.core.Context" uuid="eac693b7-2713-4029-bf92-dd3a141f37a5"/>
+    <rootTask type="sltp.mm.core.Task" uuid="3f2d57cb-9c61-4350-80da-3190c3ab054b">
+      <context type="sltp.mm.core.Context" uuid="2665c496-a221-476e-8601-eb7a6c12886f"/>
       <explicit>false</explicit>
       <name>Default</name>
       <priority>-2147483648</priority>
-      <subgraph type="sltp.mm.core.Graph" uuid="6cb09139-a632-44cf-8a3c-8d7c3556c0b3">
-        <tasks type="sltp.mm.core.Task" uuid="b5728633-abed-4027-8e5e-6feca0aceb98">
+      <subgraph type="sltp.mm.core.Graph" uuid="11a1c728-b830-42f1-adc2-e86963c504ff">
+        <tasks type="sltp.mm.core.Task" uuid="336848c4-d399-4faa-b110-31b96c4a80c7">
           <baseTask>true</baseTask>
-          <context type="sltp.mm.core.Context" uuid="eac693b7-2713-4029-bf92-dd3a141f37a5"/>
+          <context type="sltp.mm.core.Context" uuid="2665c496-a221-476e-8601-eb7a6c12886f"/>
           <explicit>false</explicit>
           <id>1</id>
           <isTimed>true</isTimed>
           <name>Cont</name>
           <priority>40</priority>
-          <rates type="sltp.mm.core.Rate" uuid="ad321c1e-100e-49d8-9fdc-2bdf87f8d4ff">
+          <rates type="sltp.mm.core.Rate" uuid="4f912297-b625-453e-baf5-b44a4d561627">
             <annotation>Cont</annotation>
             <color>255</color>
             <hasBlocks>true</hasBlocks>
@@ -1067,25 +1081,6 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
               <period>0.0</period>
             </rateSpec>
             <sti>0</sti>
-          </rates>
-          <rates type="sltp.mm.core.Rate" uuid="ae90a7cf-87b7-4b45-9175-6c3ac1535468">
-            <annotation>FiM</annotation>
-            <color>-2139062017</color>
-            <hasBlocks>true</hasBlocks>
-            <rateSpec type="sltp.mm.core.RateSpec">
-              <offset>1.0</offset>
-              <period>0.0</period>
-            </rateSpec>
-            <sti>1</sti>
-          </rates>
-          <rates type="sltp.mm.core.Rate" uuid="5afcf9c7-e38f-47d6-aef6-59638af040e0">
-            <annotation>D1</annotation>
-            <color>-436207361</color>
-            <hasBlocks>true</hasBlocks>
-            <rateSpec type="sltp.mm.core.RateSpec">
-              <period>.1</period>
-            </rateSpec>
-            <sti>2</sti>
           </rates>
         </tasks>
       </subgraph>
@@ -1096,6 +1091,54 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleEditor.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <sltp_editor version="1.1" packageUris="http://schema.mathworks.com/mf0/DiagramEditor/R2019a_20181107 http://schema.mathworks.com/mf0/SltpSyntax/R2022b_202203181006">
   <sltp.mm.syntax.Context type="sltp.mm.syntax.Context" uuid="7bd73a50-b869-48c3-8a44-6397a5025663">
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="3f50931b-fee8-418a-8d5f-834009331c25">
+      <dataName>portIn1</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="b09c0115-1237-4082-8566-3c80e06cf7fd">
+      <dataName>portIn2</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="331ff887-28c9-4870-8a97-fe7791239e84">
+      <dataName>portIn3</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="b7f0a8a2-4c28-4f23-8cf8-498b574959ea">
+      <dataName>portIn4</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="764b3e75-83cf-4894-8e87-79a23b53b233">
+      <dataName>portIn5</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="f44ef989-f7a2-40bb-9d78-ebf8c4c6e7b5">
+      <dataName>portIn6</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="92f3ccbe-3836-4268-9858-0c2a04fe5245">
+      <dataName>portOut1</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="8d283dc6-f8ea-420e-a6e1-318be57190f8">
+      <dataName>portOut2</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="133e205d-f693-4efc-a339-2d86e079d5e5">
+      <dataName>portOut3</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="9a0bfa79-c52e-4165-baed-4ec3c59e8fbf">
+      <dataName>portOut4</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="ab6fb772-8273-4580-a758-b7b380f2d14b">
+      <dataName>portOut5</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="ab795ff2-f691-45f8-97d3-93cee82f0375">
+      <dataName>portOut6</dataName>
+      <type>RootOutport</type>
+    </globalData>
     <rootGraph type="sltp.mm.syntax.Graph" uuid="a6705287-58f7-4fc0-811f-3645d26e0285">
       <children type="sltp.mm.syntax.Node" uuid="830dd844-1394-46d0-8749-bda9ce8127f1">
         <priority>40</priority>
@@ -1104,18 +1147,6 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleEditor.xml
           <hasBlocks>true</hasBlocks>
           <rate>0</rate>
           <title>Cont</title>
-        </rates>
-        <rates type="sltp.mm.syntax.RateData">
-          <color>#808080</color>
-          <hasBlocks>true</hasBlocks>
-          <rate>[0, 1]</rate>
-          <title>FiM</title>
-        </rates>
-        <rates type="sltp.mm.syntax.RateData">
-          <color>#e60000</color>
-          <hasBlocks>true</hasBlocks>
-          <rate>0.1</rate>
-          <title>D1</title>
         </rates>
         <title>Cont</title>
         <type>base</type>
@@ -1172,7 +1203,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_141.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
   <P Name="Location">[-1, -7, 1537, 865]</P>
-  <P Name="ZoomFactor">72</P>
+  <P Name="ZoomFactor">80</P>
   <Block BlockType="Inport" Name="In1" SID="144">
     <P Name="Position">[415, 238, 445, 252]</P>
     <P Name="ZOrder">715</P>
@@ -1220,7 +1251,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_141.xml
       <P Name="units">Metric (MKS)</P>
       <P Name="mtype">Fixed</P>
       <P Name="rep">Euler Angles</P>
-      <P Name="xme_0">[0 0 cg_nom]</P>
+      <P Name="xme_0">[0 0.001 cg_nom+0.001]</P>
       <P Name="Vm_0">[0 0 0]</P>
       <P Name="eul_0">[0 0 0]</P>
       <P Name="pm_0">[0 0 0]</P>
@@ -1256,6 +1287,14 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_141.xml
       </Port>
     </PortProperties>
     <System Ref="system_229"/>
+  </Block>
+  <Block BlockType="Scope" Name="Scope" SID="524">
+    <PortCounts in="1"/>
+    <P Name="Position">[1270, 219, 1300, 251]</P>
+    <P Name="ZOrder">1039</P>
+    <P Name="ScopeSpecificationString">Simulink.scopes.TimeScopeBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Time Domain&apos;,true,&apos;SerializedDisplays&apos;,{struct(&apos;MinYLimReal&apos;,&apos;-727.92228&apos;,&apos;MaxYLimReal&apos;,&apos;2260.88025&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos; 0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;2260.88025&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,3,&apos;LineNames&apos;,{{&apos;Calculo F y M/Fxyz:1&apos;,&apos;Calculo F y M/Fxyz:2&apos;,&apos;Calculo F y M/Fxyz:3&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,1)},&apos;DisplayPropertyDefaults&apos;,struct(&apos;MinYLimReal&apos;,&apos;-727.92228&apos;,&apos;MaxYLimReal&apos;,&apos;2260.88025&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos; 0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;2260.88025&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2022b&apos;)),&apos;Version&apos;,&apos;2022b&apos;)</P>
+    <P Name="NumInputPorts">1</P>
+    <P Name="Floating">off</P>
   </Block>
   <Block BlockType="Terminator" Name="Terminator" SID="505">
     <P Name="Position">[1905, 525, 1925, 545]</P>
@@ -1361,7 +1400,16 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_141.xml
   <Line>
     <P Name="ZOrder">361</P>
     <P Name="Src">229#out:1</P>
-    <P Name="Dst">225#in:1</P>
+    <P Name="Points">[158, 0]</P>
+    <Branch>
+      <P Name="ZOrder">369</P>
+      <P Name="Points">[0, -90]</P>
+      <P Name="Dst">524#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">368</P>
+      <P Name="Dst">225#in:1</P>
+    </Branch>
   </Line>
   <Line>
     <P Name="ZOrder">363</P>
@@ -3022,9 +3070,9 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
   <P Name="Location">[-1, -7, 1537, 865]</P>
-  <P Name="ZoomFactor">125</P>
+  <P Name="ZoomFactor">84</P>
   <P Name="ReportName">simulink-default.rpt</P>
-  <P Name="SIDHighWatermark">522</P>
+  <P Name="SIDHighWatermark">524</P>
   <Block BlockType="Inport" Name="In1" SID="510">
     <P Name="Position">[370, 103, 400, 117]</P>
     <P Name="ZOrder">1037</P>
@@ -3373,7 +3421,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">fae48301-35f7-4a3f-bfe3-4d6060918227</P>
     </Object>
-    <P Name="BDUuid" Class="char">6fa8224a-d1a6-449d-ad84-42abf676e1b5</P>
+    <P Name="BDUuid" Class="char">08ae2cf5-2d7e-41ea-ad5e-ce5988e1153d</P>
   </Object>
 </WindowsInfo>
 
