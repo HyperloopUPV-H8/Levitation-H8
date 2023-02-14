@@ -1,13 +1,13 @@
-%   cg_nom=0.567;
-%   lev_nom=0.01965;
-%   cg_suelo=0.56985;
-%   cg_techo=0.55735;
-%   x=[0, 0, cg_nom, 0, 0, 0, 0, 0, 0, 0, 0, 0]; %estados: posy,rotz,vy,wz
-%   argout=linmod('H8_EMS_partelinealizada',x,[0, 0, 0, 0]); %entradas
-%   A1=argout.a
-%   B1=argout.b
-%   C1=argout.c
-%   D1=argout.d
+   cg_nom=0.567;
+   lev_nom=0.01965;
+   cg_suelo=0.56985;
+   cg_techo=0.55735;
+%    x=[0, 0, cg_nom, 0, 0, 0, 0, 0, 0, 0, 0, 0]; %estados: posy,rotz,vy,wz
+%    argout=linmod('H8_EMS_partelinealizada',x,[0, 0, 0, 0]); %entradas
+%    A1=argout.a
+%    B1=argout.b
+%    C1=argout.c
+%    D1=argout.d
 %sys=ss(A5,B5,C5,D5);
 %rank(ctrb(A5,B5))
 %eig(A5)
