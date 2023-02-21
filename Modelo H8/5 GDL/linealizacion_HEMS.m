@@ -11,7 +11,7 @@
 %sys=ss(A5,B5,C5,D5);
 %rank(ctrb(A5,B5))
 %eig(A5)
-K1 = place(A3,B3,[-1 -1 -2 -2 -2+2j -2-2j])
+K1 = place(A3,B3,[-4 -4 -6 -6 -10+5j -10-5j])
 %Si cambian las matrices hay que eliminar columnas 1 y 7 y filas 1 y 7
 
 %% Añadir accion integral
@@ -24,6 +24,6 @@ Aa3 = [A3 zeros(6,3); C3(1:3,:) zeros(3,3)]
 Ba3 = [B3; D3(1:3,:)]
 rank(ctrb(Aa3,Ba3))
 
-Ka1 = place(Aa3,Ba3,[ -1 -1 -2 -2 -3 -3 -4 -3+3j -3-3j])
+Ka1 = place(Aa3,Ba3,[ -4 -4 -8 -8 -12 -12 -16 -10+5j -10-5j])
 
 %Ka = place(Aa,Ba,[-5 -4 -6+6j -6-6j -2+2j -2-2j])
