@@ -41,8 +41,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <cp:category>model</cp:category>
   <dcterms:created xsi:type="dcterms:W3CDTF">2023-03-01T19:52:26Z</dcterms:created>
   <cp:lastModifiedBy>USUARIO</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2023-03-01T20:12:00Z</dcterms:modified>
-  <cp:revision>1.27</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2023-03-03T18:00:36Z</dcterms:modified>
+  <cp:revision>1.29</cp:revision>
   <cp:version>R2022b</cp:version>
 </cp:coreProperties>
 
@@ -108,7 +108,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:1.27&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:1.29&gt;</P>
     </ConfigManagerSettings>
     <SimulationSettings>
       <P Name="SimulationMode">normal</P>
@@ -884,7 +884,7 @@ __MWOPC_PART_BEGIN__ /simulink/configSetInfo.xml
 __MWOPC_PART_BEGIN__ /simulink/graphicalInterface.xml
 <?xml version="1.0" encoding="utf-8"?>
 <GraphicalInterface>
-  <P Name="NumRootInports">4</P>
+  <P Name="NumRootInports">5</P>
   <Inport Name="In1">
     <P Name="BusObject"/>
     <P Name="OutputFunctionCall">off</P>
@@ -907,6 +907,13 @@ __MWOPC_PART_BEGIN__ /simulink/graphicalInterface.xml
     <P Name="UnitExpr">inherit</P>
   </Inport>
   <Inport Name="In4">
+    <P Name="BusObject"/>
+    <P Name="OutputFunctionCall">off</P>
+    <P Name="InportServerType">off</P>
+    <P Name="SampleTime">-1</P>
+    <P Name="UnitExpr">inherit</P>
+  </Inport>
+  <Inport Name="Input">
     <P Name="BusObject"/>
     <P Name="OutputFunctionCall">off</P>
     <P Name="InportServerType">off</P>
@@ -983,59 +990,63 @@ __MWOPC_PART_BEGIN__ /simulink/graphicalInterface.xml
 __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2022b_20220222">
-  <System type="System" uuid="0cef1f6c-9d2c-422e-bca1-035a45f73204">
-    <Interface type="Interface" uuid="7a3859da-1d1b-4792-837b-6d59ba75e4bd"/>
+  <System type="System" uuid="1f8f51e1-7aff-45a6-99b4-56f412b45691">
+    <Interface type="Interface" uuid="84b2b765-07f9-44cc-8529-96bd419f7216"/>
   </System>
 </MF0>
 __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <sltp_graph version="1.1" packageUris="http://schema.mathworks.com/mf0/sltp_mm/R2022b_202203181029">
-  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="b91d0549-e12d-4873-a824-ebdaa233a44a">
-    <globalData type="sltp.mm.core.GlobalData" uuid="f6b963ee-5b6c-4b38-8c75-dcce7afe22a4">
+  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="56d011bb-fc6f-4374-90a6-4a8b7a4ac0f8">
+    <globalData type="sltp.mm.core.GlobalData" uuid="ed296672-a2ef-4c7b-92f4-927c34335455">
       <dataName>portIn1</dataName>
       <type>RootInport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="aadb7f12-ca8a-457a-b25e-dc47c5df4fca">
+    <globalData type="sltp.mm.core.GlobalData" uuid="f5ecc36a-d273-4a8d-8949-15d02c0b7ac8">
       <dataName>portIn2</dataName>
       <type>RootInport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="00ccca8b-5487-49a3-b05a-7db715198250">
+    <globalData type="sltp.mm.core.GlobalData" uuid="a6935d0e-58b0-4a8f-bf61-729798ea7c35">
       <dataName>portIn3</dataName>
       <type>RootInport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="0bcada2e-3b26-4030-aa5c-03dd90adf2df">
+    <globalData type="sltp.mm.core.GlobalData" uuid="9cc9f525-d634-4ca2-8d30-9cb7dbba1cb3">
       <dataName>portIn4</dataName>
       <type>RootInport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="678855f3-147d-4864-a91e-b6bac28b3b07">
+    <globalData type="sltp.mm.core.GlobalData" uuid="a4611cd3-c68a-48e1-9f4b-5c8e4dfd93ef">
       <dataName>portIn5</dataName>
       <type>RootInport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="dac6420e-a5dc-4d02-a490-306e5b441f82">
+    <globalData type="sltp.mm.core.GlobalData" uuid="a677eaa6-9961-4180-8990-c25d8ca79f62">
       <dataName>portIn6</dataName>
       <type>RootInport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="20d2bad3-399d-44b0-b4af-7fc46a2991e8">
+    <globalData type="sltp.mm.core.GlobalData" uuid="1a8a9a8e-ae1b-4a8c-acba-fded64dafc14">
+      <dataName>portInput</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.core.GlobalData" uuid="0bb3efae-c864-4906-92c6-c377088cd450">
       <dataName>portOut1</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="18c469da-6233-48b8-a7f2-833fddfa2ac7">
+    <globalData type="sltp.mm.core.GlobalData" uuid="25b6402b-e935-49fb-94a4-3769dc63cda1">
       <dataName>portOut2</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="0c92b4bf-bf2a-4843-a970-5b0dc59b8416">
+    <globalData type="sltp.mm.core.GlobalData" uuid="abd75619-fa55-456b-a14a-46cd2876ab3c">
       <dataName>portOut3</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="9a5530d8-8c7f-4cea-afb5-f80170dd063c">
+    <globalData type="sltp.mm.core.GlobalData" uuid="85c86ab4-473e-4b09-b6c6-f2b6ccede1cc">
       <dataName>portOut4</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="ce40a517-f225-4ef1-a879-ddc0e57d89f7">
+    <globalData type="sltp.mm.core.GlobalData" uuid="066ab78f-e9c3-4f64-8603-346d0c249f00">
       <dataName>portOut5</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="b63f8e28-39c0-4727-bcc3-996cea070691">
+    <globalData type="sltp.mm.core.GlobalData" uuid="ae588f25-a04b-4ab1-9fac-9ede56088def">
       <dataName>portOut6</dataName>
       <type>RootOutport</type>
     </globalData>
@@ -1044,21 +1055,21 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
       <isSynchronized>true</isSynchronized>
       <panelState type="sltp.mm.core.EditorPanelState" uuid="5201ec29-d860-4a9c-91ad-6517356a39e8"/>
     </editorState>
-    <rootTask type="sltp.mm.core.Task" uuid="240c79e5-e18c-461f-ad60-082325731bbb">
-      <context type="sltp.mm.core.Context" uuid="b91d0549-e12d-4873-a824-ebdaa233a44a"/>
+    <rootTask type="sltp.mm.core.Task" uuid="bac401f7-b301-493e-8086-34179737e105">
+      <context type="sltp.mm.core.Context" uuid="56d011bb-fc6f-4374-90a6-4a8b7a4ac0f8"/>
       <explicit>false</explicit>
       <name>Default</name>
       <priority>-2147483648</priority>
-      <subgraph type="sltp.mm.core.Graph" uuid="2e2db7e1-5c73-40ed-816f-175ddd73a6ca">
-        <tasks type="sltp.mm.core.Task" uuid="cbd4e7ba-810f-4261-b1a0-758bba449367">
+      <subgraph type="sltp.mm.core.Graph" uuid="a07e0ddd-ad7a-4e7d-9744-f6f00010ba13">
+        <tasks type="sltp.mm.core.Task" uuid="00bdd65b-b7f3-425b-9281-6fb17589704c">
           <baseTask>true</baseTask>
-          <context type="sltp.mm.core.Context" uuid="b91d0549-e12d-4873-a824-ebdaa233a44a"/>
+          <context type="sltp.mm.core.Context" uuid="56d011bb-fc6f-4374-90a6-4a8b7a4ac0f8"/>
           <explicit>false</explicit>
           <id>1</id>
           <isTimed>true</isTimed>
           <name>Cont</name>
           <priority>40</priority>
-          <rates type="sltp.mm.core.Rate" uuid="8e0a53a8-561f-4c34-9cde-b772cdd38300">
+          <rates type="sltp.mm.core.Rate" uuid="1742076f-82b7-41c8-95bd-9a4559b4c7cc">
             <annotation>Cont</annotation>
             <color>255</color>
             <hasBlocks>true</hasBlocks>
@@ -1099,6 +1110,10 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleEditor.xml
     </globalData>
     <globalData type="sltp.mm.syntax.GlobalData" uuid="f44ef989-f7a2-40bb-9d78-ebf8c4c6e7b5">
       <dataName>portIn6</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="b74c6923-cf96-4140-b84c-0f42b5d6f89a">
+      <dataName>portInput</dataName>
       <type>RootInport</type>
     </globalData>
     <globalData type="sltp.mm.syntax.GlobalData" uuid="92f3ccbe-3836-4268-9858-0c2a04fe5245">
@@ -1209,6 +1224,11 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_141.xml
     <P Name="ZOrder">718</P>
     <P Name="Port">4</P>
   </Block>
+  <Block BlockType="Inport" Name="Input" SID="553">
+    <P Name="Position">[415, 588, 445, 602]</P>
+    <P Name="ZOrder">1046</P>
+    <P Name="Port">5</P>
+  </Block>
   <Block BlockType="Reference" Name="6DOF " SID="225">
     <PortCounts in="2" out="9"/>
     <P Name="Position">[1460, 215, 1810, 655]</P>
@@ -1227,9 +1247,9 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_141.xml
       <P Name="units">Metric (MKS)</P>
       <P Name="mtype">Fixed</P>
       <P Name="rep">Euler Angles</P>
-      <P Name="xme_0">[0 0.001 cg_nom-0.001]</P>
+      <P Name="xme_0">[0 0 cg_suelo]</P>
       <P Name="Vm_0">[0 0 0]</P>
-      <P Name="eul_0">[0.001 -0.001 0.001]</P>
+      <P Name="eul_0">[0 0 0]</P>
       <P Name="pm_0">[0 0 0]</P>
       <P Name="mass_0">m</P>
       <P Name="mass_e">0.5</P>
@@ -1250,7 +1270,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_141.xml
     </InstanceData>
   </Block>
   <Block BlockType="SubSystem" Name="Calculo F y M" SID="229">
-    <PortCounts in="4" out="2"/>
+    <PortCounts in="5" out="2"/>
     <P Name="Position">[830, 215, 1075, 655]</P>
     <P Name="ZOrder">948</P>
     <P Name="ContentPreviewEnabled">on</P>
@@ -1280,7 +1300,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_141.xml
     <PortCounts in="1"/>
     <P Name="Position">[1270, 219, 1300, 251]</P>
     <P Name="ZOrder">1039</P>
-    <P Name="ScopeSpecificationString">Simulink.scopes.TimeScopeBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Time Domain&apos;,true,&apos;SerializedDisplays&apos;,{struct(&apos;MinYLimReal&apos;,&apos;-183.80392&apos;,&apos;MaxYLimReal&apos;,&apos;131.44118&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos; 0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;183.80392&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,3,&apos;LineNames&apos;,{{&apos;Calculo F y M/Fxyz:1&apos;,&apos;Calculo F y M/Fxyz:2&apos;,&apos;Calculo F y M/Fxyz:3&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,1)},&apos;DisplayPropertyDefaults&apos;,struct(&apos;MinYLimReal&apos;,&apos;-183.80392&apos;,&apos;MaxYLimReal&apos;,&apos;131.44118&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos; 0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;183.80392&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true,&apos;OnceAtStop&apos;,false),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2022b&apos;)),&apos;Version&apos;,&apos;2022b&apos;,&apos;Position&apos;,[549.8 100.2 560 420])</P>
+    <P Name="ScopeSpecificationString">Simulink.scopes.TimeScopeBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Time Domain&apos;,true,&apos;SerializedDisplays&apos;,{struct(&apos;MinYLimReal&apos;,&apos;-348.49977&apos;,&apos;MaxYLimReal&apos;,&apos;2218.7222&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos; 0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;2218.7222&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,3,&apos;LineNames&apos;,{{&apos;Calculo F y M/Fxyz:1&apos;,&apos;Calculo F y M/Fxyz:2&apos;,&apos;Calculo F y M/Fxyz:3&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,1)},&apos;DisplayPropertyDefaults&apos;,struct(&apos;MinYLimReal&apos;,&apos;-348.49977&apos;,&apos;MaxYLimReal&apos;,&apos;2218.7222&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos; 0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;2218.7222&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true,&apos;OnceAtStop&apos;,false),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2022b&apos;)),&apos;Version&apos;,&apos;2022b&apos;,&apos;Position&apos;,[549.8 100.2 560 420])</P>
     <P Name="NumInputPorts">1</P>
     <P Name="Floating">off</P>
   </Block>
@@ -1343,25 +1363,25 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_141.xml
   <Line>
     <P Name="ZOrder">210</P>
     <P Name="Src">144#out:1</P>
-    <P Name="Points">[292, 0; 0, 25]</P>
+    <P Name="Points">[292, 0; 0, 10]</P>
     <P Name="Dst">229#in:1</P>
   </Line>
   <Line>
     <P Name="ZOrder">211</P>
     <P Name="Src">145#out:1</P>
-    <P Name="Points">[219, 0; 0, 60]</P>
+    <P Name="Points">[219, 0; 0, 25]</P>
     <P Name="Dst">229#in:2</P>
   </Line>
   <Line>
     <P Name="ZOrder">212</P>
     <P Name="Src">146#out:1</P>
-    <P Name="Points">[145, 0; 0, 95]</P>
+    <P Name="Points">[146, 0; 0, 40]</P>
     <P Name="Dst">229#in:3</P>
   </Line>
   <Line>
     <P Name="ZOrder">213</P>
     <P Name="Src">147#out:1</P>
-    <P Name="Points">[72, 0; 0, 130]</P>
+    <P Name="Points">[73, 0; 0, 55]</P>
     <P Name="Dst">229#in:4</P>
   </Line>
   <Line>
@@ -1432,6 +1452,12 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_141.xml
       <P Name="Dst">528#in:2</P>
     </Branch>
   </Line>
+  <Line>
+    <P Name="ZOrder">398</P>
+    <P Name="Src">553#out:1</P>
+    <P Name="Points">[188, 0; 0, 20]</P>
+    <P Name="Dst">229#in:5</P>
+  </Line>
   <Annotation SID="159">
     <P Name="Name">HEMS-EMS 1</P>
     <P Name="Position">[323, 238, 387, 253]</P>
@@ -1462,7 +1488,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_229.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
   <P Name="Location">[-1, -7, 1537, 865]</P>
-  <P Name="ZoomFactor">36</P>
+  <P Name="ZoomFactor">60</P>
   <Block BlockType="Inport" Name="In1" SID="230">
     <P Name="Position">[-165, 483, -135, 497]</P>
     <P Name="ZOrder">789</P>
@@ -1481,6 +1507,11 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_229.xml
     <P Name="Position">[-165, 798, -135, 812]</P>
     <P Name="ZOrder">792</P>
     <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Inport" Name="Input" SID="554">
+    <P Name="Position">[270, 763, 300, 777]</P>
+    <P Name="ZOrder">839</P>
+    <P Name="Port">5</P>
   </Block>
   <Block BlockType="Constant" Name="Constant3" SID="165">
     <P Name="Position">[120, 1110, 150, 1140]</P>
@@ -1596,8 +1627,8 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_229.xml
     <System Ref="system_533"/>
   </Block>
   <Block BlockType="SubSystem" Name="Fuerzas y momentos en el eje Y" SID="277">
-    <PortCounts in="4" out="3"/>
-    <P Name="Position">[400, 535, 560, 750]</P>
+    <PortCounts in="5" out="3"/>
+    <P Name="Position">[400, 537, 560, 753]</P>
     <P Name="ZOrder">798</P>
     <P Name="ContentPreviewEnabled">on</P>
     <PortProperties>
@@ -1938,24 +1969,24 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_229.xml
   <Line>
     <P Name="ZOrder">424</P>
     <P Name="Src">381#out:1</P>
-    <P Name="Points">[20, 0]</P>
+    <P Name="Points">[15, 0; 0, 10]</P>
     <P Name="Dst">277#in:4</P>
   </Line>
   <Line>
     <P Name="ZOrder">427</P>
     <P Name="Src">378#out:1</P>
+    <P Name="Points">[10, 0; 0, -5]</P>
     <P Name="Dst">277#in:1</P>
   </Line>
   <Line>
     <P Name="ZOrder">426</P>
     <P Name="Src">379#out:1</P>
-    <P Name="Points">[10, 0; 0, 15]</P>
     <P Name="Dst">277#in:2</P>
   </Line>
   <Line>
     <P Name="ZOrder">425</P>
     <P Name="Src">380#out:1</P>
-    <P Name="Points">[4, 0; 0, 30]</P>
+    <P Name="Points">[10, 0; 0, 5]</P>
     <P Name="Dst">277#in:3</P>
   </Line>
   <Line>
@@ -2030,6 +2061,12 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_229.xml
     <P Name="Points">[160, 0; 0, 65]</P>
     <P Name="Dst">222#in:1</P>
   </Line>
+  <Line>
+    <P Name="ZOrder">521</P>
+    <P Name="Src">554#out:1</P>
+    <P Name="Points">[45, 0; 0, -35]</P>
+    <P Name="Dst">277#in:5</P>
+  </Line>
   <Annotation SID="239">
     <P Name="Name">HEMS-EMS 3</P>
     <P Name="Position">[-275, 692, -211, 707]</P>
@@ -2060,7 +2097,6 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_277.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
   <P Name="Location">[-1, -7, 1537, 865]</P>
-  <P Name="ZoomFactor">62</P>
   <Block BlockType="Inport" Name="In2" SID="301">
     <P Name="Position">[55, 763, 85, 777]</P>
     <P Name="ZOrder">806</P>
@@ -2079,6 +2115,11 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_277.xml
     <P Name="Position">[55, 823, 85, 837]</P>
     <P Name="ZOrder">809</P>
     <P Name="Port">4</P>
+  </Block>
+  <Block BlockType="Inport" Name="Input" SID="555">
+    <P Name="Position">[55, 868, 85, 882]</P>
+    <P Name="ZOrder">828</P>
+    <P Name="Port">5</P>
   </Block>
   <Block BlockType="Sum" Name=" " SID="419">
     <PortCounts in="4" out="1"/>
@@ -2291,6 +2332,12 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_277.xml
     <P Name="ZOrder">419</P>
     <P Name="Src">420#out:1</P>
     <P Name="Dst">317#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">443</P>
+    <P Name="Src">555#out:1</P>
+    <P Name="Points">[252, 0; 0, -25]</P>
+    <P Name="Dst">309#in:5</P>
   </Line>
 </System>
 
@@ -2838,9 +2885,9 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
   <P Name="Location">[-1, -7, 1537, 865]</P>
-  <P Name="ZoomFactor">51</P>
+  <P Name="ZoomFactor">80</P>
   <P Name="ReportName">simulink-default.rpt</P>
-  <P Name="SIDHighWatermark">551</P>
+  <P Name="SIDHighWatermark">555</P>
   <Block BlockType="Inport" Name="In1" SID="510">
     <P Name="Position">[370, 103, 400, 117]</P>
     <P Name="ZOrder">1037</P>
@@ -2860,8 +2907,13 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <P Name="ZOrder">1040</P>
     <P Name="Port">4</P>
   </Block>
+  <Block BlockType="Inport" Name="Input" SID="552">
+    <P Name="Position">[355, 388, 385, 402]</P>
+    <P Name="ZOrder">1049</P>
+    <P Name="Port">5</P>
+  </Block>
   <Block BlockType="SubSystem" Name="Boggie Dynamics" SID="141">
-    <PortCounts in="4" out="6"/>
+    <PortCounts in="5" out="6"/>
     <P Name="Position">[525, 83, 905, 437]</P>
     <P Name="ZOrder">968</P>
     <P Name="ContentPreviewEnabled">on</P>
@@ -2943,25 +2995,25 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
   <Line>
     <P Name="ZOrder">288</P>
     <P Name="Src">510#out:1</P>
-    <P Name="Points">[87, 0; 0, 15]</P>
+    <P Name="Points">[91, 0; 0, 10]</P>
     <P Name="Dst">141#in:1</P>
   </Line>
   <Line>
     <P Name="ZOrder">289</P>
     <P Name="Src">511#out:1</P>
-    <P Name="Points">[74, 0; 0, 45]</P>
+    <P Name="Points">[77, 0; 0, 20]</P>
     <P Name="Dst">141#in:2</P>
   </Line>
   <Line>
     <P Name="ZOrder">290</P>
     <P Name="Src">512#out:1</P>
-    <P Name="Points">[62, 0; 0, 75]</P>
+    <P Name="Points">[64, 0; 0, 30]</P>
     <P Name="Dst">141#in:3</P>
   </Line>
   <Line>
     <P Name="ZOrder">291</P>
     <P Name="Src">513#out:1</P>
-    <P Name="Points">[49, 0; 0, 105]</P>
+    <P Name="Points">[50, 0; 0, 40]</P>
     <P Name="Dst">141#in:4</P>
   </Line>
   <Line>
@@ -2984,6 +3036,12 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <P Name="Labels">[1, 1]</P>
     <P Name="Src">141#out:4</P>
     <P Name="Dst">519#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">311</P>
+    <P Name="Src">552#out:1</P>
+    <P Name="Points">[68, 0; 0, 5]</P>
+    <P Name="Dst">141#in:5</P>
   </Line>
   <Annotation SID="264">
     <P Name="Name">Input: 3 señales para cada sistema que se correspondan a (Fx,Fy,Fz)</P>
@@ -3161,7 +3219,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">fae48301-35f7-4a3f-bfe3-4d6060918227</P>
     </Object>
-    <P Name="BDUuid" Class="char">88b45616-0640-4fe3-843b-6cd983716981</P>
+    <P Name="BDUuid" Class="char">7a1db821-0afb-4a9e-a7a4-328a42d59742</P>
   </Object>
 </WindowsInfo>
 
