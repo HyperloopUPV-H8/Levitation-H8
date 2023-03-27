@@ -41,8 +41,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <cp:category>model</cp:category>
   <dcterms:created xsi:type="dcterms:W3CDTF">2023-03-23T22:39:56Z</dcterms:created>
   <cp:lastModifiedBy>USUARIO</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2023-03-25T12:54:08Z</dcterms:modified>
-  <cp:revision>1.39</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2023-03-27T20:32:08Z</dcterms:modified>
+  <cp:revision>1.40</cp:revision>
   <cp:version>R2022b</cp:version>
 </cp:coreProperties>
 
@@ -108,7 +108,7 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:1.39&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:1.40&gt;</P>
     </ConfigManagerSettings>
     <SimulationSettings>
       <P Name="SimulationMode">normal</P>
@@ -990,63 +990,63 @@ __MWOPC_PART_BEGIN__ /simulink/graphicalInterface.xml
 __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2022b_20220222">
-  <System type="System" uuid="1557d5b6-1441-40fb-955b-e0806ea81ef2">
-    <Interface type="Interface" uuid="77849542-839e-4a0e-90fa-05b4a7e227fd"/>
+  <System type="System" uuid="368c5bd1-06a2-444a-914f-f5dd92a71e8b">
+    <Interface type="Interface" uuid="eaf8f09d-ad8d-4eb6-b8d4-2158fba14452"/>
   </System>
 </MF0>
 __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <sltp_graph version="1.1" packageUris="http://schema.mathworks.com/mf0/sltp_mm/R2022b_202203181029">
-  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="4e381e36-3663-41a6-a719-79062d9e3c4f">
-    <globalData type="sltp.mm.core.GlobalData" uuid="8a6f8aaa-4fcb-48e8-9157-b924714b05ad">
+  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="a716c029-fb1e-4873-8e35-2c901d84f4b9">
+    <globalData type="sltp.mm.core.GlobalData" uuid="e1523509-5c23-4ed3-9645-a54011fff87e">
       <dataName>portIn1</dataName>
       <type>RootInport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="ade36743-9c23-4c10-836e-79516bc9566f">
+    <globalData type="sltp.mm.core.GlobalData" uuid="f5060ed9-c975-4bf3-bf90-41abaf0d15d7">
       <dataName>portIn2</dataName>
       <type>RootInport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="fdfff3ad-f4f8-4b6f-b940-4d5e89a01619">
+    <globalData type="sltp.mm.core.GlobalData" uuid="3d37fad5-7a85-4e8c-a3fa-ec1a05defec0">
       <dataName>portIn3</dataName>
       <type>RootInport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="e7aa97b2-3325-4dba-8930-d21e2446cd1b">
+    <globalData type="sltp.mm.core.GlobalData" uuid="b61ad8c3-642d-4fc7-87dd-95ef51895f51">
       <dataName>portIn4</dataName>
       <type>RootInport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="8b020e96-1767-41db-a70b-bcd09f89e1fa">
+    <globalData type="sltp.mm.core.GlobalData" uuid="c70ecc26-4306-46ba-be1c-be68728c8863">
       <dataName>portIn5</dataName>
       <type>RootInport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="5c61a08e-a2b9-4e26-859a-54721afd3673">
+    <globalData type="sltp.mm.core.GlobalData" uuid="b9d6c378-9479-4d41-b452-60c88079fc45">
       <dataName>portIn6</dataName>
       <type>RootInport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="c6296b2a-93c3-42d0-a443-05340ad924db">
+    <globalData type="sltp.mm.core.GlobalData" uuid="8055d905-6a41-4dfa-9410-7216a9d909d3">
       <dataName>portInput</dataName>
       <type>RootInport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="e9f320c5-d1d1-48d4-ad94-d9c3ec77e89d">
+    <globalData type="sltp.mm.core.GlobalData" uuid="52b5f1d0-cf24-486f-a43c-c4aa2ae9a8bb">
       <dataName>portOut1</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="7448dd14-c812-4595-b161-0a8c85a3ab99">
+    <globalData type="sltp.mm.core.GlobalData" uuid="a37143b6-72e8-43fa-b0d5-59daefd13b3e">
       <dataName>portOut2</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="dcb5561c-93dd-4b04-9e0d-98edfcd2cd30">
+    <globalData type="sltp.mm.core.GlobalData" uuid="dbce53cb-61df-44c6-9a10-813a6f8baf4b">
       <dataName>portOut3</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="80932d2c-89e8-4487-aa0a-5ce2492b92f1">
+    <globalData type="sltp.mm.core.GlobalData" uuid="2b829397-ad41-4b62-90cc-d438f3376df3">
       <dataName>portOut4</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="23f010a8-bbf7-4e7c-bf66-d948cc4efe3d">
+    <globalData type="sltp.mm.core.GlobalData" uuid="ec91e684-6971-409c-92b6-b44d4e27ef92">
       <dataName>portOut5</dataName>
       <type>RootOutport</type>
     </globalData>
-    <globalData type="sltp.mm.core.GlobalData" uuid="0a6a26ba-276b-458d-97f8-1e352a07dc76">
+    <globalData type="sltp.mm.core.GlobalData" uuid="51594752-e944-4d0c-8228-9b0f5a5fa736">
       <dataName>portOut6</dataName>
       <type>RootOutport</type>
     </globalData>
@@ -1055,21 +1055,21 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
       <isSynchronized>true</isSynchronized>
       <panelState type="sltp.mm.core.EditorPanelState" uuid="5201ec29-d860-4a9c-91ad-6517356a39e8"/>
     </editorState>
-    <rootTask type="sltp.mm.core.Task" uuid="cec9599d-ab8e-4f27-8ba3-2edc25df341d">
-      <context type="sltp.mm.core.Context" uuid="4e381e36-3663-41a6-a719-79062d9e3c4f"/>
+    <rootTask type="sltp.mm.core.Task" uuid="971c9045-f9ad-4596-9071-e3ba39f2cf3b">
+      <context type="sltp.mm.core.Context" uuid="a716c029-fb1e-4873-8e35-2c901d84f4b9"/>
       <explicit>false</explicit>
       <name>Default</name>
       <priority>-2147483648</priority>
-      <subgraph type="sltp.mm.core.Graph" uuid="8b55aa14-692e-4fab-b000-12503e6fda1c">
-        <tasks type="sltp.mm.core.Task" uuid="e89790c2-ed0d-4c82-a4cb-275b6f587eac">
+      <subgraph type="sltp.mm.core.Graph" uuid="ee13bdc6-2bd9-4b9f-a902-1456ff302a76">
+        <tasks type="sltp.mm.core.Task" uuid="62525078-20dc-40bf-843a-e483c3d3ac1a">
           <baseTask>true</baseTask>
-          <context type="sltp.mm.core.Context" uuid="4e381e36-3663-41a6-a719-79062d9e3c4f"/>
+          <context type="sltp.mm.core.Context" uuid="a716c029-fb1e-4873-8e35-2c901d84f4b9"/>
           <explicit>false</explicit>
           <id>1</id>
           <isTimed>true</isTimed>
           <name>Cont</name>
           <priority>40</priority>
-          <rates type="sltp.mm.core.Rate" uuid="0ac93a6e-1e2b-4711-a323-7240c01be83c">
+          <rates type="sltp.mm.core.Rate" uuid="c3afbfa5-fd0e-4678-a1e0-b9c10a91cb2f">
             <annotation>Cont</annotation>
             <color>255</color>
             <hasBlocks>true</hasBlocks>
@@ -1247,7 +1247,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_141.xml
       <P Name="units">Metric (MKS)</P>
       <P Name="mtype">Fixed</P>
       <P Name="rep">Euler Angles</P>
-      <P Name="xme_0">[0 0 cg_suelo]</P>
+      <P Name="xme_0">[0 0.001 cg_suelo]</P>
       <P Name="Vm_0">[0 0 0]</P>
       <P Name="eul_0">[0 0 0]</P>
       <P Name="pm_0">[0 0 0]</P>
@@ -3453,7 +3453,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">fae48301-35f7-4a3f-bfe3-4d6060918227</P>
     </Object>
-    <P Name="BDUuid" Class="char">4428609c-e8c0-419b-83ad-09045b677177</P>
+    <P Name="BDUuid" Class="char">909d12e0-7f7f-4826-948c-079159c5e78c</P>
   </Object>
 </WindowsInfo>
 
