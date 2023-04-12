@@ -89,5 +89,74 @@ title("Evolucion de la resistencia con la temperatura")
 [max_temp, tiempo_subiendo] = inercia_termica_test(time, current, temperature, 1);
 
 
-%% Resistencias HEMS
+%% Caracterizacion EMS
+
+% airgap 19 -> 1:9
+% airgap 16 -> 10:16
+% airgap 13 -> 17:22
+% airgap 10 -> 23:25
+
+f19 = fit(ems_caracterizacion.CorrienteTeorica(1:9), ems_caracterizacion.Fuerza(1:9), 'exp1');
+f16 = fit(ems_caracterizacion.CorrienteTeorica(10:16), ems_caracterizacion.Fuerza(10:16), 'exp1');
+f13 = fit(ems_caracterizacion.CorrienteTeorica(17:22), ems_caracterizacion.Fuerza(17:22), 'exp1');
+f10 = fit(ems_caracterizacion.CorrienteTeorica(23:25), ems_caracterizacion.Fuerza(23:25), 'exp1');
+
+figure
+scatter(ems_caracterizacion.CorrienteTeorica(1:9), ems_caracterizacion.Fuerza(1:9),'blue')
+hold on
+scatter(ems_caracterizacion.CorrienteTeorica(10:16), ems_caracterizacion.Fuerza(10:16),'green')
+hold on
+scatter(ems_caracterizacion.CorrienteTeorica(17:22), ems_caracterizacion.Fuerza(17:22),'red')
+hold on
+scatter(ems_caracterizacion.CorrienteTeorica(23:25), ems_caracterizacion.Fuerza(23:25),'magenta')
+
+legend('19 mm', '16 mm', '13 mm', '10 mm')
+xlabel("Corriente")
+ylabel("Fuerza")
+title("Caracterizacion EMS")
+
+figure
+
+subplot(2,2,1)
+scatter(ems_caracterizacion.CorrienteTeorica(1:9), ems_caracterizacion.Fuerza(1:9),'blue')
+hold on
+plot(f19,'blue')
+
+xlabel("Corriente")
+ylabel("Fuerza")
+title("Caracterizacion EMS")
+
+subplot(2,2,2)
+scatter(ems_caracterizacion.CorrienteTeorica(10:16), ems_caracterizacion.Fuerza(10:16),'green')
+hold on
+plot(f16,'green')
+
+xlabel("Corriente")
+ylabel("Fuerza")
+title("16 mm")
+
+subplot(2,2,3)
+scatter(ems_caracterizacion.CorrienteTeorica(17:22), ems_caracterizacion.Fuerza(17:22),'red')
+hold on
+plot(f13,'red')
+
+xlabel("Corriente")
+ylabel("Fuerza")
+title("13 mm")
+
+subplot(2,2,4)
+scatter(ems_caracterizacion.CorrienteTeorica(23:25), ems_caracterizacion.Fuerza(23:25),'magenta')
+plot(f10,'magenta')
+hold on
+
+xlabel("Corriente")
+ylabel("Fuerza")
+title("10 mm")
+
+
+
+
+
+
+
 
