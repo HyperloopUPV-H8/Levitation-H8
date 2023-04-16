@@ -93,70 +93,116 @@ title("Evolucion de la resistencia con la temperatura")
 
 % airgap 19 -> 1:9
 % airgap 16 -> 10:16
-% airgap 13 -> 17:22
-% airgap 10 -> 23:25
+% airgap 13 -> 17:21
 
-f19 = fit(ems_caracterizacion.CorrienteTeorica(1:9), ems_caracterizacion.Fuerza(1:9), 'exp1');
-f16 = fit(ems_caracterizacion.CorrienteTeorica(10:16), ems_caracterizacion.Fuerza(10:16), 'exp1');
-f13 = fit(ems_caracterizacion.CorrienteTeorica(17:22), ems_caracterizacion.Fuerza(17:22), 'exp1');
-f10 = fit(ems_caracterizacion.CorrienteTeorica(23:25), ems_caracterizacion.Fuerza(23:25), 'exp1');
+f19 = fit(ems_caracterizacion.CorrienteTeorica(1:9), ems_caracterizacion.Fuerza2(1:9), 'exp1');
+f16 = fit(ems_caracterizacion.CorrienteTeorica(10:16), ems_caracterizacion.Fuerza2(10:16), 'exp1');
+f13 = fit(ems_caracterizacion.CorrienteTeorica(17:22), ems_caracterizacion.Fuerza2(17:21), 'exp1');
 
 figure
-scatter(ems_caracterizacion.CorrienteTeorica(1:9), ems_caracterizacion.Fuerza(1:9),'blue')
+scatter(ems_caracterizacion.CorrienteTeorica(1:9), ems_caracterizacion.Fuerza2(1:9),'blue')
 hold on
-scatter(ems_caracterizacion.CorrienteTeorica(10:16), ems_caracterizacion.Fuerza(10:16),'green')
+scatter(ems_caracterizacion.CorrienteTeorica(10:16), ems_caracterizacion.Fuerza2(10:16),'green')
 hold on
-scatter(ems_caracterizacion.CorrienteTeorica(17:22), ems_caracterizacion.Fuerza(17:22),'red')
-hold on
-scatter(ems_caracterizacion.CorrienteTeorica(23:25), ems_caracterizacion.Fuerza(23:25),'magenta')
+scatter(ems_caracterizacion.CorrienteTeorica(17:21), ems_caracterizacion.Fuerza2(17:21),'red')
 
-legend('19 mm', '16 mm', '13 mm', '10 mm')
+legend('19 mm', '16 mm', '13 mm')
 xlabel("Corriente")
 ylabel("Fuerza")
 title("Caracterizacion EMS")
 
 figure
 
-subplot(2,2,1)
-scatter(ems_caracterizacion.CorrienteTeorica(1:9), ems_caracterizacion.Fuerza(1:9),'blue')
+subplot(1,3,1)
+scatter(ems_caracterizacion.CorrienteTeorica(1:9), ems_caracterizacion.Fuerza2(1:9),'blue')
 hold on
 plot(f19,'blue')
+hold on
+scatter(ems_caracterizacion.CorrienteTeorica(1:9), ems_caracterizacion.ForceReal(1:9),'blue','filled')
 
 xlabel("Corriente")
 ylabel("Fuerza")
-title("Caracterizacion EMS")
+title("19 mm")
 
-subplot(2,2,2)
-scatter(ems_caracterizacion.CorrienteTeorica(10:16), ems_caracterizacion.Fuerza(10:16),'green')
+subplot(1,3,2)
+scatter(ems_caracterizacion.CorrienteTeorica(10:16), ems_caracterizacion.Fuerza2(10:16),'green')
 hold on
 plot(f16,'green')
+hold on
+scatter(ems_caracterizacion.CorrienteTeorica(10:16), ems_caracterizacion.ForceReal(10:16),'green','filled')
 
 xlabel("Corriente")
 ylabel("Fuerza")
 title("16 mm")
 
-subplot(2,2,3)
-scatter(ems_caracterizacion.CorrienteTeorica(17:22), ems_caracterizacion.Fuerza(17:22),'red')
+subplot(1,3,3)
+scatter(ems_caracterizacion.CorrienteTeorica(17:21), ems_caracterizacion.Fuerza2(17:21),'red')
 hold on
 plot(f13,'red')
+hold on
+scatter(ems_caracterizacion.CorrienteTeorica(17:21), ems_caracterizacion.ForceReal(17:21),'red','filled')
 
 xlabel("Corriente")
 ylabel("Fuerza")
 title("13 mm")
 
-subplot(2,2,4)
-scatter(ems_caracterizacion.CorrienteTeorica(23:25), ems_caracterizacion.Fuerza(23:25),'magenta')
-plot(f10,'magenta')
+
+%% Caracterizacion HEMS
+
+% Airgap 22 -> 1:9
+% Airgap 19 -> 10:21
+% Airgap 16 -> 22:28
+% Airgap 13 -> 29:37
+
+% Sin corriente -> 38:41
+
+figure
+
+subplot(2,3,1)
+scatter(hems_caracterizazcion.CorrienteTeoricaA(1:9), hems_caracterizazcion.FuerzaRealBobinas(1:9),'blue')
 hold on
+scatter(hems_caracterizazcion.CorrienteTeoricaA(1:9), hems_caracterizazcion.FuerzaTeoBobinas(1:9),'blue','filled')
 
 xlabel("Corriente")
 ylabel("Fuerza")
-title("10 mm")
+title("22 mm")
 
+subplot(2,3,2)
+scatter(hems_caracterizazcion.CorrienteTeoricaA(10:21), hems_caracterizazcion.FuerzaRealBobinas(10:21),'green')
+hold on
+scatter(hems_caracterizazcion.CorrienteTeoricaA(10:21), hems_caracterizazcion.FuerzaTeoBobinas(10:21),'green','filled')
 
+xlabel("Corriente")
+ylabel("Fuerza")
+title("19 mm")
 
+subplot(2,3,3)
+scatter(hems_caracterizazcion.CorrienteTeoricaA(22:28), hems_caracterizazcion.FuerzaRealBobinas(22:28),'red')
+hold on
+scatter(hems_caracterizazcion.CorrienteTeoricaA(22:28), hems_caracterizazcion.FuerzaTeoBobinas(22:28),'red','filled')
 
+xlabel("Corriente")
+ylabel("Fuerza")
+title("16 mm")
 
+subplot(2,3,4)
+scatter(hems_caracterizazcion.CorrienteTeoricaA(29:37), hems_caracterizazcion.FuerzaRealBobinas(29:37),'magenta')
+hold on
+scatter(hems_caracterizazcion.CorrienteTeoricaA(29:37), hems_caracterizazcion.FuerzaTeoBobinas(29:37),'magenta','filled')
 
+xlabel("Corriente")
+ylabel("Fuerza")
+title("13 mm")
+
+subplot(2,3,5)
+scatter(hems_caracterizazcion.AirgapRealmm(38:41), hems_caracterizazcion.FuerzaRealBobinas(38:41),'black')
+hold on
+scatter(hems_caracterizazcion.AirgapRealmm(38:41), hems_caracterizazcion.FuerzaTericaN(38:41),'black','filled')
+
+xlabel("Airgap")
+ylabel("Fuerza")
+title("0 A")
+
+legend("Filled Teórica", "Void Measured")
 
 
