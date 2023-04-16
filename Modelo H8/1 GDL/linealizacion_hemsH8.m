@@ -10,7 +10,7 @@ m=200;
 
 %% Con LUT
 
-x=[0.01965, 0]; % estados
+x=[lev_nom, 0]; % estados
 argout=linmod('H8_1GDL_currentinput',x,0); % entrada
 A=argout.a;
 B=argout.b;
