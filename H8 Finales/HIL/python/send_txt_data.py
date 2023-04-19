@@ -15,8 +15,9 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         print(f"Connected by {addr}")
         for line in f: #Reads a line at 2 kHz
             a = f.readline()
-            #data = struct.pack('!d', a)
             conn.sendall(bytes(a, encoding='utf-8'))
+            #received_data = conn.recv(1)
+            #print(f"Received {received_data!r}")
             time.sleep(0.0005)
 
 f.close()
