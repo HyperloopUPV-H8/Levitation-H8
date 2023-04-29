@@ -1,7 +1,7 @@
 % 
 % cargar la tabla como table=readtable(csvfile)
 %
-function [v, t] = sensor_data_convert(table)
+function [v, t] = sensor_data_convert(table, scale_factor)
     
     n = height(table)-1;
 
@@ -14,7 +14,7 @@ for i = 1:1:n
     value = str2num(extractAfter(value_raw,","));
     time = table.Var2(i);
     t = vertcat(t,time);
-    v = vertcat(v,value);
+    v = vertcat(v,value/scale_factor);
 
 
 end
