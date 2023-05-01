@@ -1,7 +1,7 @@
 % 1 gdl real ajustes
 
-%load("hems.mat");
-%load("barrido_levnom.mat");
+load("hems.mat");
+load("barrido_levnom.mat");
 
 peso = 47.942;
 m = peso*4;
