@@ -3,10 +3,12 @@ function plot_gui(csvfile1, csvfile2, csvfile3)
 switch nargin
     case 1
         [t1, v1] = vectors(csvfile1);
+		figure
         plot(t1, v1)
         legend("csvfile1")
     case 2
         [t1, v1] = vectors(csvfile1);
+		figure
         plot(t1, v1)
         
         hold on
@@ -16,6 +18,7 @@ switch nargin
         legend("csvfile1","csvfile2")
     case 3
         [t1, v1] = vectors(csvfile1);
+		figure
         plot(t1, v1)
         
         hold on
