@@ -7,11 +7,18 @@ format long;
 f_T=time(2)-time(1)
 variance_T = variance(temp)
 
-f1 = movmedian(temp,30);
+filtered_T = movmedian(temp,30);
+
 figure
-plot(time,temp)
+set(groot,'defaultAxesTickLabelInterpreter','latex');  
+
+colors = ["#EE7623", "k", "#003B4D", "#8F8FA3", "#7398AD", "#C1C5C8"];
+plot(time,temp,'Color',colors(1))
+ylabel('Temperature [ºC]','Interpreter','latex')
+xlabel('Time [s]','Interpreter','latex')
 hold on
-plot(time, f1, 'g')
+plot(time, filtered_T, 'Color',colors(3))
+legend('Temperature raw values','Temperature filtered values','Interpreter','latex')
 
 function variance_T = variance(value)
     
