@@ -19,7 +19,8 @@ offset_current = 0.001065378087271;
 
 fs_airgap = 20000;
 fl_airgap = 7500;
-var_airgap = 1.112140361208638e-08/1000;
+%var_airgap = 1.112140361208638e-08/1000;
+var_airgap = 1.112140361208638e-08;
 offset_airgap = 0;
 airgap_min = 80/1000;
 airgap_max = 115/1000;
