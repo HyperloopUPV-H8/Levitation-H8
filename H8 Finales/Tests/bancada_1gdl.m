@@ -5,12 +5,13 @@
 
 peso = 47.942;
 m = peso*4;
-suelo = 24.14/1000;
-mech = 56.6/1000;
+suelo = 25/1000;
+mech = 62.0/1000;
 
-vbat = 200; 
+vbat = 70;
 v_max = 0.4*vbat; %minimo deberia ser 70V para 50A
 v_min = -0.4*vbat;
+offset_mosfet = 2.2/100;
 
 fs_current = 20000;
 fl_current = 10000;

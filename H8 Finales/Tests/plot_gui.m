@@ -1,4 +1,4 @@
-function plot_gui(csvfile1, csvfile2, csvfile3)
+function [t1, v1, v2, v3] = plot_gui(csvfile1, csvfile2, csvfile3)
 
 switch nargin
     case 1
