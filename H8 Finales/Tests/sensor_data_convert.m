@@ -1,9 +1,8 @@
-% 
-% cargar la tabla como table=readtable(csvfile)
-%
-function [v, t] = sensor_data_convert(table, scale_factor)
-    
-    n = height(table)-1;
+function [v, t] = sensor_data_convert(csvfile, scale_factor)
+
+table=readtable(csvfile);
+
+n = height(table)-1;
 
 t = []; 
 v = [];
