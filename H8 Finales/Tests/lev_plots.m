@@ -1,3 +1,21 @@
+function lev_plots(selection)
+% plots tipicos y repetitivos utiles para testing
+
+switch(selection)
+    case "airgaps_vertical"
+        plot_gui("lcu_master_airgap_1.csv", "lcu_master_slave_airgap_2.csv", "lcu_master_airgap_3.csv","lcu_master_slave_airgap_4.csv");
+    case "rotaciones"
+        plot_gui("lcu_master_rot_x.csv", "lcu_master_rot_y.csv", "lcu_master_rot_z.csv");
+    case "posicion_z"
+        plot_gui("z.csv","z_reference.csv");
+    case "corrientes_hems"
+         plot_gui("lcu_master_current_coil_hems_1.csv", "lcu_master_slave_current_coil_hems_2.csv", "lcu_master_current_coil_hems_3.csv","lcu_master_slave_current_coil_hems_4.csv");
+    otherwise
+        disp("Opciones disponibles: airgaps_vertical, rotaciones, posicion_z, corrientes_hems");
+end
+
+end
+
 function [t1, v1, v2, v3] = plot_gui(csvfile1, csvfile2, csvfile3,csvfile4)
 
 switch nargin

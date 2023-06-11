@@ -5,7 +5,7 @@ switch nargin
         [t1, v1] = vectors(csvfile1);
 		figure
         plot(t1, v1)
-        legend(csvfile1)
+        legend("csvfile1")
     case 2
         [t1, v1] = vectors(csvfile1);
 		figure
@@ -15,7 +15,7 @@ switch nargin
         
         [t2, v2] = vectors(csvfile2);
         plot(t2, v2)
-        legend(csvfile1,csvfile2)
+        legend("csvfile1","csvfile2")
     case 3
         [t1, v1] = vectors(csvfile1);
 		figure
@@ -30,7 +30,7 @@ switch nargin
 
         [t3, v3] = vectors(csvfile3);
         plot(t3, v3)
-        legend(csvfile1,csvfile2,csvfile3)
+        legend("csvfile1","csvfile2","csvfile3")
      
     case 4
         [t1, v1] = vectors(csvfile1);
@@ -51,7 +51,7 @@ switch nargin
 
         [t4, v4] = vectors(csvfile4);
         plot(t4, v4)
-        legend(csvfile1,csvfile2,csvfile3,csvfile4)
+        legend("csvfile1","csvfile2","csvfile3","csvfile4")
 end
 
 end
