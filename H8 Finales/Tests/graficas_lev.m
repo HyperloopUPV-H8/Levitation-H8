@@ -97,10 +97,10 @@ switch nargin
         plot(seconds(t4)-seconds(t4(1)), v4)
         legend(csvfile1,csvfile2,csvfile3,csvfile4)
         %legend("Airgap 1","Airgap 2","Airgap 3","Airgap 4");
-        legend("I EMS 1","I EMS 2","I EMS 3","I EMS 4");
+        %legend("I EMS 1","I EMS 2","I EMS 3","I EMS 4");
         xlabel("Time [s]");
         %ylabel("Distance [mm]");
-        ylabel("Current [A]");
+        %ylabel("Current [A]");
 end
 
 end
