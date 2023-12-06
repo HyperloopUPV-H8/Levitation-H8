@@ -3,3 +3,34 @@ H8 Finales/barridos/offsets_mecanicos_1gdl.mldatx
 H8 Finales/Tests/values/airgap_3.csv
 *.csv
 H8 Finales/Tests/1gdl_bancada_ajuste.mldatx
+H8 Finales/barridolevnom.m
+H8 Finales/Tests/graficasLevitacion.m
+H8 Finales/Tests/graphs_corporativas.m
+k_probar.mat
+Modelo H8/1 GDL/H8_1GDL.slx
+Modelo H8/1 GDL/H8_1GDL.slxc
+Modelo H8/1 GDL/slprj/_sfprj/H8_1GDL/amsi_serial.mat
+Modelo H8/1 GDL/slprj/sim/varcache/H8_1GDL/checksumOfCache.mat
+Modelo H8/1 GDL/slprj/sim/varcache/H8_1GDL/tmwinternal/simulink_cache.xml
+Modelo H8/1 GDL/slprj/sim/varcache/H8_1GDL/varInfo.mat
+Modelo H8/5 GDL/Pruebas_ag2pos.slxc
+Modelo H8/5 GDL/slprj/_jitprj/s1y7EKjOl0iaZTJt1pcib2G.l
+Modelo H8/5 GDL/slprj/_jitprj/s1y7EKjOl0iaZTJt1pcib2G.mat
+Modelo H8/5 GDL/slprj/_jitprj/sBzRMLTW0Z3y6IdjpfHuFlF.l
+Modelo H8/5 GDL/slprj/_jitprj/sBzRMLTW0Z3y6IdjpfHuFlF.mat
+Modelo H8/5 GDL/slprj/_jitprj/sywcOsmBRzt1hpDhAcG6rED.l
+Modelo H8/5 GDL/slprj/_jitprj/sywcOsmBRzt1hpDhAcG6rED.mat
+Modelo H8/5 GDL/slprj/_sfprj/airgap2pos/_self/sfun/info/binfo.mat
+Modelo H8/5 GDL/slprj/_sfprj/EMLReport/s1y7EKjOl0iaZTJt1pcib2G.mat
+Modelo H8/5 GDL/slprj/_sfprj/EMLReport/sBzRMLTW0Z3y6IdjpfHuFlF.mat
+Modelo H8/5 GDL/slprj/_sfprj/EMLReport/sywcOsmBRzt1hpDhAcG6rED.mat
+Modelo H8/5 GDL/slprj/_sfprj/pos2airgap/_self/sfun/info/binfo.mat
+Modelo H8/5 GDL/slprj/_sfprj/pos2airgapUNITS/_self/sfun/info/binfo.mat
+Modelo H8/5 GDL/slprj/_sfprj/precompile/7JtKeSoovDtrqSBC1OZttH.mat
+Modelo H8/5 GDL/slprj/_sfprj/precompile/EowZfuqGUD1pmPaiczCZ6E.mat
+Modelo H8/5 GDL/slprj/_sfprj/precompile/JgUzZxpPHJIM9AT5arMBbC.mat
+Modelo H8/5 GDL/slprj/_sfprj/precompile/uKRyQeXezTz3SKKH9kpq2D.mat
+Modelo H8/5 GDL/slprj/_sfprj/Pruebas_ag2pos/amsi_serial.mat
+Modelo H8/5 GDL/slprj/sim/varcache/Pruebas_ag2pos/checksumOfCache.mat
+Modelo H8/5 GDL/slprj/sim/varcache/Pruebas_ag2pos/tmwinternal/simulink_cache.xml
+Modelo H8/5 GDL/slprj/sim/varcache/Pruebas_ag2pos/varInfo.mat
